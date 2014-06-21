@@ -1,0 +1,134 @@
+﻿body {
+}
+.yearsContent
+{
+    width:110px;
+    height:auto;
+    border-right:2px solid #078A9B;
+    position:absolute;
+    top:50px;
+   
+}
+.yearList
+{
+    margin:0 auto;
+    margin-bottom:20px;
+}
+.yearList li
+{
+    margin-top:23px;
+    margin-left:28px;
+    font-size:16px;
+    cursor:pointer;
+}
+.moreList
+{
+    cursor:pointer;
+    width:57px;
+    height:16px;
+    margin-left:26px;
+    margin-bottom:10px;
+    background:url(../../../Content/RRWM/img/bottom.png);
+}
+.moreList_1
+{
+    background:url(../../../Content/RRWM/img/up.png);
+}
+.monthContent
+{
+    position:absolute;
+    width:1320px;
+    /*height:100px;*/
+    /*border:1px solid blue;*/
+    left:125px;
+    top:20px;
+}
+.monthList
+{
+    position:relative;
+    float:left;
+    width:108px;
+    margin-top:20px;
+    /*border:1px solid red;*/
+}
+.month_text
+{ 
+    font-size:15px;
+    font-weight:bold;
+    margin-bottom:30px;
+    text-align:center;
+}
+.weekList li
+{   text-align:center;
+    margin-top:25px;
+    margin-bottom:0px;
+    font-size:14px;
+    cursor:pointer;
+}
+.daySty
+{
+    font-size:13px;
+}
+.moreMonth
+{   
+    position:absolute;
+    right:70px;
+    top:20px;
+    cursor:pointer;
+    width:14px;
+    height:47px;
+    margin-left:26px;
+    margin-bottom:10px;
+    background:url(../../../Content/RRWM/img/moreMonth.png);
+}
+.moreMonth_1
+{
+    position:absolute;
+    right:10px;
+    background:url(../../../Content/RRWM/img/moreMonth_1.png);
+}
+.changeBtn
+{
+    position:absolute;
+    left:125px;
+    width:auto;
+    height:25px;
+    /*border:1px solid blue;*/
+    top:350px;
+}
+#lableYear,#lableMonth,#lableWeek,.day_Sty
+{
+    color:#ff4e00;
+    margin-right:20px;
+    margin-left:5px;
+    line-height:25px;
+    font-size:15px;
+    float:left;
+}
+#scheduleDay
+{
+    width:80px;
+    float:left;
+}
+#confirmBtn
+{
+    width:80px;
+    height:25px;
+    background-color:#0c7d8b;
+    color:white;
+    text-align:center;
+    line-height:25px;
+    float:left;
+    margin-left:20px;
+    cursor:pointer;
+}
+#confirmBtn:hover
+{
+    background-color:#bbb7b7;
+    color:black;
+}
+
+.textColor1
+{
+    color:#ff4e00;
+}

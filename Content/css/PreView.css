@@ -1,0 +1,109 @@
+﻿
+#PreviewCover 
+{
+    width:100%;
+    position:absolute;
+    top:0;
+    bottom:0;
+    overflow:auto;
+    background:#666;
+    z-index:5000;
+}
+#PreviewContent
+{
+margin:auto;
+margin-top:55px;
+    width:60%;
+    min-height:85%;
+    background-color:White;
+    z-index:5000;
+    border:1px solid  #00829d ;
+    overflow:hidden;
+    margin-bottom:25px;
+}
+#previewTop 
+{
+    width:94%;
+    height:auto;
+    float:left;
+    margin-left:3%;
+    border-bottom:1px dashed #ccc;
+    padding:20px 0;
+    margin-bottom:20px;
+}
+#Preview_title 
+{
+    font-size:21px;
+    color:#017586;
+}
+.Preview_row {
+    width:100%;
+    height:auto;
+    float:left;
+}
+#Preview_item_Title
+{
+    font-size:22px;
+    float:left;
+    width:80%;
+    height:auto;    
+    overflow:hidden;
+    color:#000!important;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.Preview_item
+{
+    margin-left:42px;
+    font-size:14px;
+    float:left;
+    line-height:30px;
+}
+    .Preview_item font {
+        color:#017586;
+    }
+#Preview_Article
+{
+    width:80%;
+    height:auto;
+    overflow:auto;
+    padding-bottom:20px;
+    float:left;
+    margin-left:10%;
+    line-height:30px;
+    text-indent:2em;
+}
+#PreviewCover_Close
+{
+    width:25px;
+    height:25px;
+    font-size:25px;
+    color:#000;
+    float:right;
+    cursor:pointer;
+    font-weight:bold;
+}
+#PreviewCover_Close:hover
+{
+    color:#ff6400;
+}
+#Preview_scrollTop {
+    /*width:12px;
+    padding:16px 24px 0;
+    height:60px;*/
+    width:60px;
+    height:76px;
+    background:url(../../Content/img/scrollTop.png) no-repeat;
+    position:fixed;
+    bottom:50px;
+    right:120px;
+    font-size:14px;
+    color:#c8c8c8;
+    text-align:center;
+    line-height:74px;
+    cursor:pointer;
+}
+    #Preview_scrollTop:hover {
+       background-position:-60px 0;
+       color:#ff6400;
+    }

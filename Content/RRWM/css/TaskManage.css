@@ -1,0 +1,257 @@
+﻿body {
+}
+#projectListContent {
+    position:absolute;
+    top:10px;
+    /*border:1px solid black;*/
+    /*left:-230px;*/
+    bottom:5px;
+    right:3px;   
+    width:225px;
+}
+#task_Content
+{
+    top:10px;
+    width:auto;
+    /*float:left;*/
+    position:absolute;
+    /*position:fixed;*/
+    min-width:600px;
+    height:auto;
+    right:5px;
+    left:245px;
+    bottom:10px;
+    /*border:1px solid black;*/   
+}
+#task_Top {
+    position:absolute;
+    top:30px;
+    left:0px;
+    right:20px;
+    min-width:850px;
+    width:auto;
+    height:60px;
+}
+#title {
+    position:absolute;
+    top:0px;
+    bottom:0;
+    left:0;
+    width:510px;
+    /*border:1px solid blue;*/
+}
+.taskTitle_text {
+    float:left;
+    width:148px;
+    height:60px;
+    margin-left:20px;
+    font-size:16px;
+    line-height:60px;
+    text-align:center;
+    cursor:pointer;
+    border:1px solid white;
+}
+.taskTitle_text:hover {
+    opacity:0.7;
+}
+#Projects_text {
+    background-color:#C9EDF7;
+    color:#3A6C90;      
+}
+#Groups_text {
+    background-color:#E3E5F9;
+    color:#552EA7;     
+}
+#Members_text {
+    background-color:#E3EDAF;
+    color:#37644B;     
+}
+#pageBtn {
+    position:absolute;
+    min-width:400px;
+    height:30px;
+    right:0px;
+    left:520px;
+    top:25px;
+}
+.pageBtn_sty,.pageBtn_all {
+    float:left;
+    width:50px;
+    margin-right:8px;
+    height:20px;
+    text-align:center;
+    color:black;
+    cursor:pointer;
+}
+.pageBtn_all {
+     width:60px;
+}
+.pageBtn_sty2 {
+    width:55px;
+}
+.pageBtn_sty1 { 
+    color:#838383;
+}
+#taskmanageList {
+    position:absolute;
+    top:135px;
+    left:20px;
+    right:20px;
+    height:385px;
+    overflow:hidden;   
+    min-width:770px;
+    /*border:1px solid blue;*/
+}
+.border_sty1 {
+    border:1px solid #2186AD;
+}
+.border_sty2 {
+    border:1px solid #3B03AF;
+}
+.border_sty3 {
+    border:1px solid #056731;
+}
+/*-----------------------------------Projecs/Groups/Members列表样式--------------------------------------*/
+.proTitle_sty {
+    font-size:16px;
+    color:black; 
+    margin-top:20px;
+    margin-left:10px;
+    margin-bottom:30px;
+    font-weight:400;
+}
+.ListContent {
+    position:absolute;
+    top:60px;
+    /*border:1px solid black;*/
+    left:3px;
+    bottom:5px;
+    right:3px;
+    
+}
+.projectList_sty {
+   
+    color:#2186AD;
+    margin-top:10px;
+    width:15em;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    height:25px;
+    margin-bottom:15px;
+    /*border:1px solid black;*/
+    padding-left:10px;
+    position:relative;       
+}
+
+.projectLine {
+    border-bottom:1px dashed black;
+}
+.projectList_sty:hover,.groupsList_sty:hover,.membersList_sty:hover,.membersList_sty1:hover{
+    cursor:pointer;
+    color:black;
+}
+.projectList_sty_jt {
+     background:url(../../../Content/RRWM/img/jt_2.png) no-repeat;
+     width:6px;
+     height:8px;
+     position:absolute;
+     left:0px; 
+     top:5px;
+}
+.groupsList_sty {
+   
+    color:#552EA7;
+    margin-top:10px;
+    width:15em;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    height:25px;
+    margin-bottom:15px;
+    /*border:1px solid black;*/
+     padding-left:10px;
+     margin-left:50px;
+    position:relative;       
+}
+.membersList_sty {
+   
+    color:#03644B;
+    margin-top:10px;
+    width:80px;
+    height:auto;
+    margin-bottom:15px;
+     padding-left:10px;
+     margin-left:25px;
+    position:relative;       
+}
+.membersList_sty1 {
+   
+    color:#03644B;
+    margin-top:10px;
+    width:70px;
+    float:left;
+    height:auto;
+    margin-bottom:15px;
+   padding-left:10px;
+     margin-left:25px;
+    position:relative;   
+        
+}
+.projectList_color {
+    color:black;
+}
+/*-------------------------------------所有任务列表样式-----------------------------------------*/
+
+#taskmanageListContent{
+    
+   position:absolute;
+   top:35px;
+   left:0px;
+   right:20px;
+   height:385px;
+   /*border:1px solid black;*/
+}
+.edit_sty{
+    cursor:pointer;
+    color:#FF6633;
+    left:28%;
+    position:absolute;
+}
+.delete_sty {
+    cursor:pointer;
+    color:#FF6633;
+    left:60%;
+    position:absolute;
+}
+.edit_sty:hover,.delete_sty:hover{
+    text-decoration:underline;
+}
+#detailsContent1 {
+    position:absolute;
+    width:800px;
+    top:60px;
+    left:15%;
+    height:500px;
+    /*border:1px solid black;*/
+}
+.button_back {
+    width:75px;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    cursor:pointer;
+    color:white;
+    position:absolute;
+    border:1px solid #187888;
+    color:#187888;
+    top:600px;
+    left:70%;
+}
+.button_back:hover {
+    background-color:#187888;
+    color:white;
+}
+
+
+

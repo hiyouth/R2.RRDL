@@ -1,0 +1,52 @@
+﻿.upCover {
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.2);
+    position:absolute;
+}
+
+.uploadDiv {
+    width:500px;
+    height:400px;
+    position:fixed;
+    background-color:#ffffff;    
+    margin-top:-200px;
+    top:50%;
+    border:1px solid #D7D7D7;
+    left:50%;
+    margin-left:-200px;
+}
+#uploadDivClose {
+    
+    float:right;
+    font-size:30px;
+    cursor:pointer;
+    width:30px;
+    height:30px;
+}
+#uploadDivClose:hover {
+    color:red;
+}
+#fileForm {
+    position:relative;
+    margin:35px 0px 10px 45px;
+    height:30px;
+    width:300px;
+    border:1px solid dashed;
+}
+#fileInput {
+    height:30px;
+    width:100%;
+}
+#fileBtn {
+    width:100px;
+    height:35px;
+    background-color:#007385;
+    color:white;
+    border:none;
+    position:relative;
+    left:250px;
+    top:20px;
+    text-justify:auto;
+    cursor:pointer;
+}

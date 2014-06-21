@@ -1,0 +1,392 @@
+﻿body {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    font-family:'Microsoft YaHei';
+}
+
+ul {
+    margin:0;
+    padding:0;
+}
+
+li {
+    margin:0;
+    padding:0;
+   list-style-type:none;
+}
+
+table {
+    margin:0;
+    padding:0;
+}
+
+table tr {
+    margin:0;
+    padding:0;
+}
+
+table tr td{
+    margin:0;
+    padding:0;
+    border-width:0;
+}
+
+label {
+    font-weight:normal !important;
+}
+
+/*Logo头部*/
+.head {
+    height:90px;
+    width:100%;
+    background:url(../../images/1.png) 0 0  no-repeat;
+}
+
+
+/**************************表格****************************/
+
+/*表格统计部分总的容器*/
+#workTimeStatic {
+    height:95%;
+    width:95%;
+    margin :15px auto;
+    /*border:1px solid red;*/
+}
+
+.stHeadUl {
+    width:100%;
+    height:28px;
+}
+
+/*统计类型标题*/
+.stHeadUl li {
+    float:left;
+    height:28px;
+    width:33.2%;
+    text-align:center;
+    font-size:16px;
+    line-height:25px;
+    cursor:pointer;
+}
+
+/*.workTimeStatic ul li:hover {
+    background-color: #EEEEEE;
+}*/
+.stHeadUl li:hover {
+    background-color: #EEEEEE;
+}
+/*月份团队名称*/
+#teamNameMonth {
+    background-color:#D9EDF7;
+}
+
+/*月份时间*/
+#staticTableTimeMonth {
+    background-color:#FCF8E3;
+}
+
+/*季度团队名称*/
+#teamNameQuater {
+    background-color:#DFF0D8;
+}
+
+/*季度时间*/
+#staticTableTimeQuater {
+    background-color:#F3F3F3;
+}
+
+/*年份团队名称*/
+#teamNameYear {
+    background-color:#DFF0D8;
+}
+
+/*年份时间*/
+#staticTableTimeYear {
+    background-color:#F3F3F3;
+}
+
+/**************************统计图******************************/
+
+.taskHoursChartMain {
+    height:1040px;
+    min-height:1040px;
+    width:95%;
+    min-width:1080px;
+    padding-left:25px;
+}
+
+.taskHoursChartItem {
+    min-height:520px;
+    width:100%;
+    height:560px;
+}
+
+/*标题*/
+.taskHoursChartItem .itemTitle {
+    font-size:20px;
+    color:#333333;  
+    margin-top:10px;  
+}
+
+.taskHoursChartItem .itemTitle span {
+    font-size:15px;
+    color:#16A085;    
+    margin-left:10px;
+}
+
+/*类型标签*/
+.taskHoursChartItem .itemQueryBtns {
+    margin-top:10px;
+    color:white;
+    height:30px;
+}
+
+.taskHoursChartItem .itemQueryBtns li {
+    float:left;
+    width:90px;
+    height:30px;
+    text-align:center;
+    line-height:25px;
+    margin-right:10px;
+    cursor:pointer;
+    font-size:17px;
+    /*border:1px solid white;*/
+}
+
+/*.taskHoursChartItem .itemQueryBtns li :hover {
+    border:1px solid #6CE26C;
+}*/
+
+.itemQueryBtns li:hover {
+    border:1px solid red;
+}
+
+.taskHoursChartItem .itemQueryBtns li.selected {
+    background-color:#16A085;
+    color:white;
+    border:1px solid #16A085;
+}
+
+.taskHoursChartItem .itemQueryBtns li.unSelected {
+    background-color:#E7E5DC;
+    color:black;
+    border:1px solid #FBEED5;
+}
+
+/*图表*/
+.taskHoursChart {
+    margin-top:10px;
+    height:430px;
+    width:100%;
+    min-width:1000px;
+    border-top:2px solid #007ACC;
+    /*border:1px solid red;*/
+}
+
+
+/******************************公用部分*******************************/
+
+
+/*选中的标题*/
+.stHeadSel {
+    color:#FF6F12;
+    background-color:#EEEEEE;
+    border:1px solid #DDDDDD;
+    border-bottom:0px solid #A9BB71;
+}
+
+.stHeadUn {
+   color:#428BD2;
+   border:0px solid #DDDDDD;
+   border-bottom:1px solid #DDDDDD
+}
+
+.workTimeStaticMain {
+    height:95%;
+    width:99.8%;
+    /*border:1px solid #A9BB71;*/
+}
+
+.workTimeStaticItem {
+    height:100%;
+    width:100%;
+}
+
+.wtsItemSel {
+    display:block;
+}
+
+.wtsItemUn {
+    display:none;
+}
+
+/*表格统计按钮栏*/
+.btnQuery {
+    height:35px;
+    margin-top:15px;
+    margin-bottom:5px;
+    width:100%;
+}
+
+.statiticsBtn{
+    width:80px;
+    height:35px;
+    float:left;
+    margin-left:10px;
+    text-align:center;
+    line-height:35px;
+    font-size:16px;
+    color:black;
+    cursor:pointer;
+    
+}
+
+.statiticsBtn:hover {
+    border:1px solid #67B9C4;
+}
+
+.statiticsBtnSel {
+    border:1px solid #16A085;
+}
+
+.statiticsBtnUn {
+    border:1px solid #FBEED5;
+}
+
+.statiticsSelectContent {
+    float:left;
+    width:800px;
+    min-width:700px;
+    /*margin-left:50px;*/
+}
+
+.statiticsSelectContent ul li {
+    width:190px;
+    height:30px;
+    margin-right:10px;
+    float:left;
+}
+
+
+.statiticsSelectContent .queryTimeTips {
+    /*width:120px;*/
+    float:left;
+    /*margin-right:10px;*/
+    /*text-align:center;*/
+    line-height:35px;
+    /*font-size:16px;*/
+    color:black;
+}
+
+
+.statiticsSelectContent select {
+    height:25px;
+    width:110px;
+    float:left;
+    margin-left:10px;
+    margin-right:5px;
+    margin-top:5px;
+    /*text-align:center;*/
+    line-height:35px;
+    /*font-size:16px;*/
+    color:black;
+    border:1px solid #FBEED5;
+    padding-left:2px;
+}
+    
+
+
+.statiticsQueryBtn {
+    width:130px;
+    background-color:#1ABC9C;
+    color:white;
+    border:none;
+    height:35px;
+    float:right;
+    margin-right:20px;
+    margin-left:10px;
+    text-align:center;
+    line-height:35px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.statiticsQueryBtn:hover {
+    background-color:#16A085;
+    /*border:1px solid white;*/
+    /**/
+}
+
+/*统计表格容器*/
+.workTimeStaticContent {
+    width:100%;
+    height:90%;
+    /*border:1px solid red;*/
+}
+
+/*当前统计的团队和月份*/
+.staticTableTips {
+    clear:both;
+    height:60px;
+    width:100%;
+    margin-top:10px;
+}
+
+.staticTeamName, .staticTime {
+    margin-top:15px;
+    float:left;
+    height:30px;
+    width:120px;
+    line-height:30px;
+    text-align:center;
+}
+
+.staticTableTipsInfo {
+    margin-top:15px;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    float:right;
+    word-spacing:1px;
+}
+
+.staticTableTipsInfo label {
+    color:red;    
+}
+
+
+
+.staticTableMonthes, .staticTableQuaters, .staticTableYears {
+    width:100%;
+    margin-top:5px;
+    /*font-size:15px;*/
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+/*表头*/
+.staticTableMonthes thead tr, .staticTableQuaters thead tr, .staticTableYears thead tr{
+    border-bottom:1px solid #FCF8E3;
+    height:35px;
+}
+
+.staticTableMonthes thead tr th, .staticTableQuaters thead tr th, .staticTableYears thead tr th  {
+    text-align:left;
+    padding-left:3px;
+}
+
+.staticTableMonthes tbody tr, .staticTableQuaters tbody tr, .staticTableYears tbody tr {
+    height:40px;   
+    padding-left:5px; 
+    border-bottom:1px solid #DDDDDD;
+}
+
+.staticTableMonthes tbody tr td, .staticTableQuaters tbody tr td, .staticTableYears tbody tr td {
+    padding-left:5px;    
+}
+

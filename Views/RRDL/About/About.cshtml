@@ -1,0 +1,238 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<script src="@Url.Content("~/Scripts/LoginControlModule/Login.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/CommonModule/KnowledgeView/KnowledgeView.js")" type="text/javascript"></script>
+<link href="@Url.Content("~/Content/css/Login.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/css/KnowledgeView.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/css/About.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/css/project.css")" rel="stylesheet" type="text/css" />
+<script src="@Url.Content("~/Scripts/CommonModule/About/about.js")" type="text/javascript"></script>
+@*<script src="@Url.Content("~/Scripts/CommonModule/About/projInfo.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/CommonModule/About/Project.js")" type="text/javascript"></script>*@
+
+<link href="@Url.Content("~/Content/css/ContactPerson.css")" rel="stylesheet" type="text/css" />
+<div id="Home">
+    <div id="HomeContent">
+        <div class="About_left">
+            <div class="Manage_nav_title">关于我们</div>
+            <div class="Manage_nav">
+                <div class="M_newuser">团队信息</div>
+                <div class="M_guide">入职指南</div>
+                @*<div class="M_user">团队作品</div>*@
+                <div class="M_knowledge">版本信息</div>
+                  @if (Request.Cookies["userinf"] != null)
+                {    
+                <div class="M_contactuser">团队通讯录</div>
+                }
+                <div class="M_projInfo" style="cursor:default !important;display:none !important;">项目信息</div>
+            </div>
+        </div>
+        <div class="AboutModule">
+            
+            <div class="About_item">
+                <span class="About_module_title">团队名称：</span>
+                <div class="About_item_content"><div class="About_rr">R<span>2</span>Team</div></div>
+            </div>
+
+            <div class="About_item">
+                <span class="About_module_title">团队成员：</span>
+                <div class="About_item_content About_item_member">
+                    <div class="About_content_member">
+                        <span class="About_year">2009</span>                  
+                        <span class="About_men">崔&nbsp;&nbsp;&nbsp;艺</span>
+                        <span class="About_men">雷&nbsp;&nbsp;&nbsp;磊</span>
+                    </div>
+                    <div class="About_content_member">
+                        <span class="About_year">2011</span>
+                        <span class="About_men">王少波</span>
+                        <span class="About_men About_oldmen">柯&nbsp;&nbsp;&nbsp;文</span>
+                        <span class="About_men About_oldmen">汪少俊</span>
+                    </div>
+                    <div class="About_content_member">
+                        <span class="About_year">2012</span>
+                        <span class="About_men">帅&nbsp;&nbsp;&nbsp;磊</span>
+                        <span class="About_men">曹晓敏</span>                      
+                        <span class="About_men About_oldmen">梁&nbsp;&nbsp;&nbsp;旭</span>
+                        <span class="About_men About_oldmen">刘艳杰</span>
+                        <span class="About_men About_oldmen">孟&nbsp;&nbsp;&nbsp;荣</span>
+                        <span class="About_men About_oldmen">李&nbsp;&nbsp;&nbsp;夏</span>
+                        <span class="About_men About_oldmen">李剑萍</span>
+                        <span class="About_men About_oldmen">李亚斌</span>
+                    </div>
+                    <div class="About_content_member">
+                        <span class="About_year">2013</span>
+                        <span class="About_men">蒋建明</span>
+                        <span class="About_men">宁&nbsp;&nbsp;&nbsp;楠</span>
+                        <span class="About_men">赵森森</span>
+                        <span class="About_men">张振强</span>
+                        <span class="About_men">李&nbsp;&nbsp;&nbsp;雄</span>
+                        <span class="About_men">熊燕萍</span><br />
+                    </div>
+                </div>
+            </div>
+
+            <div class="About_item entryGuide">
+                <iframe src="" id="entryGuideIframe" >
+                </iframe>             
+            </div>
+            
+            @*<div class="About_item">
+                <span class="About_module_title">团队作品：</span>
+                <div class="About_item_content About_item_works">
+                    <span class="About_year">2012年</span>
+                    <div class="About_item_works_option">
+                        <span>4月</span><div>海南抗震监管备案设防平台</div><div class="item_number">项目编号：XM11097</div><div class="item_info item_info_disable">资料链接</div><br />
+                        <div class="About_option_bottom"><span>成&nbsp;&nbsp;&nbsp;员：</span><span>崔&nbsp;&nbsp;&nbsp;艺</span><span>雷&nbsp;&nbsp;&nbsp;磊</span><span>王少波</span><span>柯&nbsp;&nbsp;&nbsp;文</span><span>李&nbsp;&nbsp;&nbsp;夏</span><span>李剑萍</span><span>孟&nbsp;&nbsp;&nbsp;荣</span><span>帅&nbsp;&nbsp;&nbsp;磊</span><span>刘艳杰</span></div>
+                    </div>
+                    <div class="About_item_works_option">
+                        <span>6月</span><div>云南地质灾害信息管理系统</div><div class="item_number">项目编号：DLXM20120035</div><div class="item_info item_info_disable">资料链接</div>
+                        <div class="About_option_bottom"><span>成&nbsp;&nbsp;&nbsp;员：</span><span>崔&nbsp;&nbsp;&nbsp;艺</span><span>雷&nbsp;&nbsp;&nbsp;磊</span><span>孟&nbsp;&nbsp;&nbsp;荣</span><span>帅&nbsp;&nbsp;&nbsp;磊</span><span>李亚斌</span><span>曹晓敏</span></div>                    
+                    </div>
+                    <div class="About_item_works_option">
+                        <span>10月</span><div>大连地质灾害信息管理系统</div><div class="item_number">项目编号：DLXM20120027</div><div class="item_info">资料链接</div>
+                        <div class="About_option_bottom"><span>成&nbsp;&nbsp;&nbsp;员：</span><span>崔&nbsp;&nbsp;&nbsp;艺</span><span>雷&nbsp;&nbsp;&nbsp;磊</span><span>王少波</span><span>曹晓敏</span><span>李亚斌</span><span>帅&nbsp;&nbsp;&nbsp;磊</span><span>李剑萍</span><span>梁&nbsp;&nbsp;&nbsp;旭</span><span>李&nbsp;&nbsp;&nbsp;夏</span><span>刘艳杰</span><span>蒋建明</span></div>
+                    </div>
+                </div>
+                <div class="About_item_content About_item_works" style="margin-left: 115px;">
+                    <span class="About_year">2013年</span>
+                    <div class="About_item_works_option">
+                        <span>3月</span><div>地质灾害产品行业开发SDK</div>
+                        <div class="item_number">项目编号：IP2013-0001</div>
+                        <div class="item_info item_info_disable">资料链接</div>
+                        <div class="About_option_bottom" style="width:500px;"><span>成&nbsp;&nbsp;&nbsp;员：</span><span>雷&nbsp;&nbsp;&nbsp;磊</span><span>李亚斌</span></div>
+                    </div>
+                    <div class="About_item_works_option">
+                        <span>4月</span><div>福建地质灾害信息管理系统</div>
+                        <div class="item_number">项目编号：XM11028</div>
+                        <div class="item_info">资料链接</div>
+                        <div class="About_option_bottom"><span>成&nbsp;&nbsp;&nbsp;员：</span><span>崔&nbsp;&nbsp;&nbsp;艺</span><span>雷&nbsp;&nbsp;&nbsp;磊</span><span>王少波</span><span>曹晓敏</span><span>孟&nbsp;&nbsp;&nbsp;荣</span><span>帅&nbsp;&nbsp;&nbsp;磊</span><span>李剑萍</span><span>梁&nbsp;&nbsp;&nbsp;旭</span><span>李&nbsp;&nbsp;&nbsp;夏</span><span style="margin-left:80px;">蒋建明</span></div>
+                    </div>
+                    <div class="About_item_works_option">
+                        <span>4月</span><div>江西省地质灾害预警预报系统</div>
+                        <div class="item_number">项目编号：XM11089</div>
+                        <div class="item_info item_info_disable">资料链接</div>
+                        <div class="About_option_bottom"><span>成&nbsp;&nbsp;&nbsp;员：</span><span>雷&nbsp;&nbsp;&nbsp;磊</span><span>李亚斌</span><span>帅&nbsp;&nbsp;&nbsp;磊</span><span>李剑萍</span><span>曹晓敏</span></div>
+                    </div>
+                    <div class="About_item_works_option">
+                        <span>6月</span><div>龙岩地质灾害信息管理系统</div>
+                        <div class="item_number">项目编号：XM11028</div>
+                        <div class="item_info item_info_disable">资料链接</div>
+                        <div class="About_option_bottom"><span>成&nbsp;&nbsp;&nbsp;员：</span><span>雷&nbsp;&nbsp;&nbsp;磊</span><span>王少波</span><span>帅&nbsp;&nbsp;&nbsp;磊</span><span>曹晓敏</span><span>宁&nbsp;&nbsp;&nbsp;楠</span><span>李&nbsp;&nbsp;&nbsp;雄</span><span>张振强</span><span>赵森森</span><span>熊燕萍</span></div>
+                    </div>
+                    <div class="About_item_works_option">
+                        <span>8月</span><div>win8地灾系统APP</div>
+                        <div class="item_number">项目编号：IP2013-0002</div>
+                        <div class="item_info item_info_disable">资料链接</div>
+                        <div class="About_option_bottom"><span>成&nbsp;&nbsp;&nbsp;员：</span><span>雷&nbsp;&nbsp;&nbsp;磊</span><span>帅&nbsp;&nbsp;&nbsp;磊</span><span>曹晓敏</span><span>蒋建明</span><span>宁&nbsp;&nbsp;&nbsp;楠</span><span>李&nbsp;&nbsp;&nbsp;雄</span></div>
+                    </div>
+                    <div class="About_item_works_option">
+                        <span>9月</span><div>农村村庄地理信息系统</div>
+                        <div class="item_number">项目编号：IP2013-0003</div>
+                        <div class="item_info">资料链接</div>
+                        <div class="About_option_bottom"><span>成&nbsp;&nbsp;&nbsp;员：</span><span>雷&nbsp;&nbsp;&nbsp;磊</span><span>帅&nbsp;&nbsp;&nbsp;磊</span><span>曹晓敏</span><span>张振强</span><span>赵森森</span><span>李&nbsp;&nbsp;&nbsp;雄</span></div>
+                    </div>
+                    <div class="About_item_works_option">
+                        <span>10月</span><div>R<font style="font-size: 10px; color:#017586">2</font>Team Develpoer Library</div>
+                        <div class="item_number">项目编号：IP2013-0004</div>
+                        <div class="item_info">资料链接</div>
+                        <div class="About_option_bottom"><span>成&nbsp;&nbsp;&nbsp;员：</span><span>雷&nbsp;&nbsp;&nbsp;磊</span><span>帅&nbsp;&nbsp;&nbsp;磊</span><span>曹晓敏</span><span>张振强</span><span>赵森森</span><span>宁&nbsp;&nbsp;&nbsp;楠</span><span>蒋建明</span><span>郭&nbsp;&nbsp;&nbsp;毅</span></div>
+                    </div>
+                    <div class="About_item_works_option">
+                        <span>12月</span><div>丽江世界文化遗产保护系统</div>
+                        <div class="item_number">项目编号：IP2013-0005</div>
+                        <div class="item_info">资料链接</div>
+                        <div class="About_option_bottom"><span>成&nbsp;&nbsp;&nbsp;员：</span><span>雷&nbsp;&nbsp;&nbsp;磊</span><span>帅&nbsp;&nbsp;&nbsp;磊</span><span>王少波</span><span>宁&nbsp;&nbsp;&nbsp;楠</span><span>蒋建明</span><span>李&nbsp;&nbsp;&nbsp;雄</span></div>
+                    </div>
+                    <div class="About_item_works_option">
+                        <span>12月</span><div>中国地下水资源数据库管理系统（平板）</div>
+                        <div class="item_number">项目编号：IP2013-0006</div>
+                        <div class="item_info item_info_disable">资料链接</div>
+                        <div class="About_option_bottom"><span>成&nbsp;&nbsp;&nbsp;员：</span><span>雷&nbsp;&nbsp;&nbsp;磊</span><span>帅&nbsp;&nbsp;&nbsp;磊</span><span>蒋建明</span></div>
+                    </div>
+                </div>
+                <div class="About_item_content About_item_works" style="margin-left: 115px;">
+                    <span class="About_year">2014年</span>
+                    <div class="About_item_works_option">
+                        <span>1月</span><div>中国地质大学出版社电子平台（平板）</div>
+                        <div class="item_number">项目编号：IP2014-0007</div>
+                        <div class="item_info item_info_disable">资料链接</div>
+                        <div class="About_option_bottom"><span>成&nbsp;&nbsp;&nbsp;员：</span><span>雷&nbsp;&nbsp;&nbsp;磊</span><span>帅&nbsp;&nbsp;&nbsp;磊</span><span>蒋建明</span></div>
+                    </div>
+                    <div class="About_item_works_option">
+                        <span>1月</span><div>地质灾害产品三维演示系统</div>
+                        <div class="item_number">项目编号：IP2014-0008</div>
+                        <div class="item_info item_info_disable">资料链接</div>
+                        <div class="About_option_bottom"><span>成&nbsp;&nbsp;&nbsp;员：</span><span>雷&nbsp;&nbsp;&nbsp;磊</span><span>王少波</span><span>帅&nbsp;&nbsp;&nbsp;磊</span><span>宁&nbsp;&nbsp;&nbsp;楠</span><span>张振强</span><span>李&nbsp;&nbsp;&nbsp;雄</span><span>郭&nbsp;&nbsp;&nbsp;毅</span><span>赵森森</span><span>蒋建明</span></div>
+                    </div>
+                    <div class="About_item_works_option">
+                        <span>2月</span><div>海南民居工程</div>
+                        <div class="item_number">项目编号：IP2014-0009</div>
+                        <div class="item_info">资料链接</div>
+                        <div class="About_option_bottom"><span>成&nbsp;&nbsp;&nbsp;员：</span><span>雷&nbsp;&nbsp;&nbsp;磊</span><span>帅&nbsp;&nbsp;&nbsp;磊</span><span>李&nbsp;&nbsp;&nbsp;雄</span><span>张振强</span><span>熊燕萍</span><span>曹四文</span><span>蒋建明</span></div>
+                    </div>
+                    <div class="About_item_works_option">
+                        <span>3月</span><div>济南地质灾害气象预警预报系统</div>
+                        <div class="item_number">项目编号：待定</div>
+                        <div class="item_info">资料链接</div>
+                        <div class="About_option_bottom"><span>成&nbsp;&nbsp;&nbsp;员：</span><span>雷&nbsp;&nbsp;&nbsp;磊</span><span>帅&nbsp;&nbsp;&nbsp;磊</span><span>王少波</span><span>曹晓敏</span><span>李&nbsp;&nbsp;&nbsp;雄</span><span>张振强</span><span>赵森森</span><span>郭&nbsp;&nbsp;&nbsp;毅</span><span>熊燕萍</span><span style="margin-left:80px;">曹四文</span></div>
+                    </div>
+                </div>
+            </div> *@
+
+            <div class="About_item">
+                <span class="About_module_title">版本信息：</span>
+                <div class="About_item_content"><span style="float:left; color:#ff6400">2013年10月</span><br /><span class="About_beta">beta版</span>，提供了系统的基本功能框架，包括普通模块和管理模块。<br />其中<span class="About_span">普通模块</span>提供了知识浏览、知识上传、个人中心等基本功能。<span class="About_span">管理模块</span>提供了对知识和用户的审核及管理相关功能。</div>
+            </div>
+            <div class="About_item">
+                <span class="About_module_title">版本信息：</span>
+                <div class="About_item_content"><span style="float:left; color:#ff6400">2013年12月</span><br /><span class="About_beta">1.1 版</span>，改变了<span class="About_span">首页</span>，在<span class="About_span">Beta版</span>的基础上完善了多处知识检索，增加了基本的排行内容。<br /></div>
+            </div>
+
+             <div class="About_item" id="mycontactuser" style="display:none;">
+               
+            </div>
+            
+            <div id="projInfoContentDiv" style="display:none;">
+                <div class="projInfoTitle">资料链接</div>
+                <div class="projInfoLinks">
+                    <div class="projUrlDiv">
+                        <label>1.内网地址</label><a  href="" target ="_blank" class="projUrl"></a>
+                    </div>
+                    <div class="projInfoDocs">                        
+                        <label>2.项目相关文档</label>
+                        <table id="projtable">
+
+                            <tr>
+                                <td class="projTableLeft">项目需求文档</td>
+                                <td class="projTableRight">
+                                    <a class="projXQdoc" target ="_blank" href="" >点击查看项目需求文档</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="projTableLeft">项目原始数据</td>
+                                <td class="projTableRight">
+                                    <a class="projYSSJDoc" target ="_blank"  href="">点击查看项目原始数据文档</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="projTableLeft">项目过程分析</td>
+                                <td class="projTableRight">
+                                    <a class="projZJGCFXDoc" target ="_blank" href="">点击查看项目过程分析文档</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="projTableLeft">项目功能分析</td>
+                                <td class="projTableRight">
+                                    <a class="projGNFXDoc" target ="_blank" href="">点击查看项目功能分析文档</a>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

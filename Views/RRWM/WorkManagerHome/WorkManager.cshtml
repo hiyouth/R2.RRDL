@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "WorkManager";
+}
+
+@*<script src="@Url.Content("~/Scripts/ManageModule/manageType.js")" type="text/javascript"></script>*@
+
+
+<link href="@Url.Content("~/Content/RRWM/css/WMHome.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/RRWM/css/AddTask.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/RRWM/css/ComfirmTask.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/RRWM/css/CheckTask.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/RRWM/css/HandOverTask.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/RRWM/css/TaskManage.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/RRWM/css/taskHoursTableStatistics.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Scripts/RRWM/dateTimePicker/css/bootstrap.min.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Scripts/RRWM/dateTimePicker/css/bootstrap-datetimepicker.min.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/RRWM/css/scheduleTime.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/RRWM/css/bonusDisplay.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/RRWM/css/bonusTableStatistics.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/RRWM/css/bonusChartStatistics.css")" rel="stylesheet" type="text/css" />
+
+<script src="@Url.Content("~/Scripts/QuoteJsLib/highcharts.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/QuoteJsLib/grid.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/RRWM/taskhoursbaseclass.js")" type="text/javascript"></script>    
+<script src="@Url.Content("~/Scripts/RRWM/taskHoursTableStatistics.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/RRWM/taskHoursChartStatistics.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/RRWM/WMHome.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/RRWM/AddTask.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/RRWM/ConfirmAndCheckTask.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/RRWM/CheckTask.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/RRWM/CheckTaskViewByChecker.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/RRWM/HandOverTask.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/RRWM/TaskManage.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/RRWM/dateTimePicker/js/bootstrap.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/RRWM/dateTimePicker/js/bootstrap-datetimepicker.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/RRWM/dateTimePicker/js/bootstrap-datetimepicker.fr.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/RRWM/FormatCheck.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/RRWM/scheduleTime.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/RRWM/bonusDisplay.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/RRWM/bonusTableStatistics.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/RRWM/bonusChartStatistics.js")" type="text/javascript"></script>
+
+<div id="WorkManager">
+    <div id="WManager_left">
+        <div class="WManager_nav">
+            <div class="WManager_navSty WM_confirm">任务确认</div>
+            <div class="WManager_navSty WM_check">任务审核</div>
+            <div class="WManager_navSty WM_manage">任务管理</div>    
+            <div class="WM_taskHoursSta">
+                <label>工时统计</label>
+                <div class="WManager_navSty">表格统计</div>
+                <div class="WManager_navSty">图形统计</div>
+            </div>  
+            <div class="WManager_navSty WM_scheduleTime">计划时间</div>
+            <div class="WM_taskHoursSta">
+                <label>分数管理</label>
+                <div class="WManager_navSty">分数展示</div>
+                <div class="WManager_navSty">表格统计</div>
+                <div class="WManager_navSty">柱图统计</div>
+                <div class="WManager_navSty">曲线统计</div>
+            </div> 
+        </div>
+    </div>
+    <div id="WManager_right"></div>
+</div>

@@ -1,0 +1,119 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@*<script src="@Url.Content("~/Scripts/CommonModule/Index/Index.js")" type="text/javascript"></script>*@
+<script src="@Url.Content("~/Scripts/LoginControlModule/Login.js")" type="text/javascript"></script>
+<link href="@Url.Content("~/Content/css/Index.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/css/Login.css")" rel="stylesheet" type="text/css" />
+
+
+<script src="@Url.Content("~/Scripts/Plugins/Select/chosen.jquery.js")" type="text/javascript"></script>
+<link href="@Url.Content("~/Scripts/Plugins/Select/chosen.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Scripts/Plugins/Select/knowledgechosen.css")" rel="stylesheet" type="text/css" />
+
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/ckeditor/ckeditor.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shCore.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushCpp.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushCSharp.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushCss.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushJava.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushJScript.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushPhp.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushSql.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushVb.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushXml.js")" type="text/javascript"></script>
+<link href="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/styles/shCore.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/styles/shThemeDefault.css")" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    SyntaxHighlighter.config.clipboardSwf = baseUrl + 'Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/clipboard.swf';
+    SyntaxHighlighter.all();
+    $(function () {
+         //  $("#newHomePageLeft").css("background-image", 'url('+baseUrl+"Content/img/newHomePageLeft.png)");
+        //var str = '<div id="Head_search">'+
+        //        '<input type="text" id="HeadSearch" value="知识标题、知识标签、上传者昵称、上传者姓名" onblur="if(!this.value){this.value="知识标题、知识标签、上传者昵称";this.flag=undefined;}else{this.flag="true"};return true;"' +
+        //'onfocus="if(this.value=="知识标题、知识标签、上传者昵称、上传者姓名"&&!this.flag)this.value="";return true;"/>' +
+        //       '<div id="HeadSearch_icon"></div>'+
+        //   '</div>';
+        //$("#newHomePageLeft").text(str); 
+    });
+</script> 
+@*<link href="@Url.Content("~/Content/css/newHomePage.css")" rel="stylesheet" type="text/css" />*@
+
+@*<div id="Home">  
+    首页修改，ZHAOs注释 一字未改2013年12月9日14:54:11  
+    <div id="HomeTeam">
+        <div class="team_course">
+            <div class="team_work">团队项目历程：2012年—至今</div>
+            <div class="achieve_less"></div>
+            <div class="team_project">
+                <div class="team_achieve">
+                </div>
+            </div>
+            <div class="achieve_more"></div>
+        </div>
+    </div>
+    <!--HomeContent结束-->
+</div>*@
+<link href="@Url.Content("~/Content/css/Index2.css")" rel="stylesheet" type="text/css" />
+<script src="@Url.Content("~/Scripts/CommonModule/Index/Index2.js")" type="text/javascript"></script>
+<link href="@Url.Content("~/Content/css/newHomePageLeftPartStyle.css")" rel="stylesheet" type="text/css" />
+<script src="@Url.Content("~/Scripts/CommonModule/Index/newHomePageLeftPart.js")" type="text/javascript"></script>
+
+@*注释1开始<div id="newHomepageLeft">
+    <div class="homePageBlock" id="kfjs">
+        <div class="title">开发技术</div>
+        <div class="below"></div>
+    </div>
+    <div class="homePageBlock" id="gisyw">
+        <div class="title">GIS业务</div>
+        <div class="below"></div>
+    </div>
+    <div class="homePageBlock" id="cyfw">
+        <div class="title">常用服务</div>
+        <div class="below"></div>
+    </div>
+    <div class="homePageBlock" id="jhwz">
+        <div class="title">精华文摘</div>
+        <div class="below"></div>
+    </div>
+    <div class="homePageBlock" id="zyxx">
+        <div class="title">资源信息</div>
+        <div class="below"></div>
+    </div>
+</div>
+<div id="newHomepageCenterContent"></div>  注释1结束*@
+<div id="newHomePageLeft" style="width:954px;height:577px;text-align:center;margin-left:10px;background-position:center;background-repeat:no-repeat;position:relative;top:100px;">
+    
+     <div id="Head_search"> <div id="serch_logo"></div>
+                <input type="text" id="HeadSearch" value="知识标题、知识标签、上传者昵称" onblur="if(!this.value){this.value='知识标题、知识标签、上传者昵称';this.flag=undefined;}else{this.flag='true'};return true;"
+         onfocus="if(this.value=='知识标题、知识标签、上传者昵称'&&!this.flag)this.value='';return true;"/>
+                <div id="HeadSearch_icon"></div>
+        <div class="headText">请输入您感兴趣的内容</div>
+    </div>
+</div>
+@* ZHAOs 2014年4月11日13:19:31注释内容
+    如果要恢复此刻之前的代码，进行如下操作：
+    1.对注释1取消注释
+    2.删掉此处注释前面一行，即 <div id="newHomePageLeft" sty…………这一行
+    3.把下面第一行改为<div id="tabs">  ，即去掉style信息，
+    这就是这次我改的全部内容OVER
+ *@
+<div id="tabs" style="position:relative;top:100px !important; float:right !important;">  
+    <ul class="tabs_header">  
+        <li><a href="###">个人排行榜</a></li>  
+        <li><a href="###">分组排行榜</a></li>  
+        <li><a href="###">知识分类排行榜</a></li>  
+    </ul>  
+    <div class="tabs_content">  
+        <table cellspacing="0">
+        </table>
+    </div>  
+    <div class="tabs_content">  
+        <table cellspacing="0">
+        </table>
+    </div>  
+    <div class="tabs_content">  
+       <table cellspacing="0">
+        </table> 
+    </div>  
+</div>  

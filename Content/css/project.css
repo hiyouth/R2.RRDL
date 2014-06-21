@@ -1,0 +1,82 @@
+﻿#projInfoContentDiv {
+    margin-top:30px;
+    position:relative;
+}
+
+.projInfoDocs {
+    margin-top:30px;
+    padding-left:0px;
+
+}
+
+.projInfoTitle {
+    font-size:16px;
+    color:#ff6a00;
+}
+
+
+.projUrlDiv label {
+    margin-top:15px;
+    font-size:14px;
+
+}
+
+.projUrlDiv {
+    margin-top:20px;
+}
+    .projUrlDiv label {
+        font-size:14px;
+        margin-right:50px;
+    }
+
+
+
+.projUrlDiv a,#projtable tr td a {
+    margin-top:15px;
+    font-size:14px;
+    cursor:pointer;
+    color:#017586;
+}
+.projUrlDiv a:hover ,#projtable tr td a:hover{
+    color:#ff6a00;
+    
+}
+
+#projtable {
+    margin-top:40px;
+    position:relative;
+    left:0px;
+    
+    
+    border-collapse:collapse;
+}
+#projtable tr {
+    height:30px;
+}
+
+    #projtable tr td {
+        border:none;
+    }
+
+.projTableLeft {
+    font-size:14px;
+    text-align:center;
+    line-height:30px;
+    width:100px;
+}
+
+.projTableRight {
+    width:500px;
+    padding-left:30px;
+}
+
+.projReturn {
+    font-size:16px;
+    color:#181818;
+    color:#ff6a00;
+    cursor:pointer;
+    margin-bottom:10px;
+}
+    .projReturn:hover {
+     color:#4dcdf6;
+    }

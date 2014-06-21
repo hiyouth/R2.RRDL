@@ -1,0 +1,145 @@
+﻿body {
+    padding:0px;
+    margin:0px;
+    font-size:15px;
+}
+.pageMain {
+position:absolute;
+top:100px;
+left:0px;
+width:100%;
+min-width:900px;
+min-height:550px;
+border-bottom:35px;
+}
+.pageLeft {
+    position:absolute;
+top:0px;
+left:0px;
+width:290px;
+height:100%;
+border-bottom:0px;
+}
+.pageRight {
+position:absolute;
+top:0px;
+left:295px;
+right:0px;
+bottom:0px;
+border-bottom:0px;
+}
+.pageLeft_content {
+    position:absolute;
+top:0px;
+left:0px;
+width:290px;
+height:100%;
+float:left;
+border-bottom:0px;
+}
+.pageLeft_slidediv {
+    position:absolute;
+top:0px;
+left:280px;
+width:10px;
+height:100%;
+float:left;
+border-left:1px solid #999;
+}
+.leftpage_slide {
+    position:absolute;
+top:100px;
+left:0px;
+width:10px;
+background: url(../../Content/img/open_icon.png)   no-repeat ;
+background-position:0px 0px;
+height:21px;
+float:left;
+cursor:pointer;
+}
+.XmwordTitle {
+    width:250px;
+    height:20px;
+    line-height:20px;
+    font-size:15px;
+    margin-left:30px;
+    margin-top:6px;
+    text-align:left;
+    color:#30909C;
+    cursor:pointer;
+}
+    .XmwordTitle:hover {
+     color:red;
+    }
+.wordHead {
+     width:250px;
+    height:25px;
+    line-height:22px;
+    font-size:16px;
+    margin-left:30px;
+    margin-top:10px;
+    text-align:left;
+    
+}
+/*youbian*/
+.xmRow {
+width:100%;
+margin-top:10px;
+}
+.xm_right_Title {
+  width:60px;
+  margin-left:40px;
+  margin-top:10px;
+  float:left;
+}
+.xm_right_txt {
+    color:#30909C;
+    margin-left:30px;
+    margin-top:10px;
+    float:left;
+    width:80%;
+}
+.xm_menbox {
+    width:220px;
+    margin:0px;
+    margin-left:20px;
+    margin-top:5px;
+    height:25px;
+    padding:0px;
+    float:left;
+    
+}
+.xm_men_name {
+    color:#30909C;
+    width:60px;
+    float:left;
+    text-align:right;
+}
+.xm_men_zhiwei {
+    color:black;
+    width:150px;
+    margin-left:10px;
+    float:left;
+    text-align:left;
+}
+.videobox {
+height:400px;
+width:600px;
+}
+.wIframe {
+position:absolute;
+left:0px;
+right:0px;
+top:10px;
+bottom:5px;
+display:none;
+}
+#wordIframe {
+width:100%;
+height:100%;
+border:none;
+background:#999;
+}
+#xmBaseInfo,#jnsiteUrl {
+cursor:pointer;
+}

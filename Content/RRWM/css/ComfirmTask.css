@@ -1,0 +1,135 @@
+﻿body {
+}
+
+#pageTitle {
+    position:absolute;
+    width:250px;
+    height:30px;
+    color:#017586;
+    font-size:18px;
+    top:10px;
+    left:10px;
+    text-align:right;
+}
+#Confirm_content {
+    position:absolute;
+    height:850px;
+    width:850px;
+    top:70px;
+    /*border:1px solid grey;*/
+    left:10%;
+}
+#Comfirm_top {
+     position:absolute;
+     /*height:210px;*/
+     height:auto;
+     width:100%;
+     left:0px;
+     right:0px;
+     border-bottom:1px dashed #666666;
+     /*border:1px solid grey;*/
+}
+#Task_details {
+     position:absolute;
+     width:100%;
+     left:0px;
+     right:0px;
+     top:250px;
+     height:650px;
+     /*border:1px solid grey;*/
+}
+.taskConfirm_sty {
+    position:relative;
+    float:left;
+    width:220px;
+    margin-left:15px;
+    margin-bottom:20px;
+    /*border:1px solid black;*/
+}
+.taskConfirm_sty1 {
+    width:300px;
+    margin-left:10px;
+}
+.taskConfirm_sty2 {
+    width:800px;
+}
+.taskConfirm_sty3 {
+    width:360px;
+    margin-left:10px;
+}
+#taskState {
+    width:100px;
+}
+#Bonus {
+    width:80px;
+}
+#send_Confirm {
+     margin-left:550px;
+     margin-right:60px;
+     background-color:#187888;
+     border:1px solid white;
+}
+#send_Confirm:hover,#GoBack_:hover {
+     background-color:#CCCCCC;
+     color:#333333;
+     border:1px solid white;
+}
+#GoBack_
+ {
+    border:1px solid #187888;
+    color:#187888;
+}
+/*-----------任务详情部分的样式--------*/
+.details_text {
+    position:absolute;
+    width:150px;
+    top:20px;
+    height:25px;
+    color:#006666;
+    left:15px;
+    font-size:16px;
+    /*border:1px solid black;*/
+}
+#detailsContent {
+    position:absolute;
+    width:800px;
+    top:60px;
+    left:50px;
+    height:500px;
+    /*border:1px solid black;*/
+}
+.details_sty {
+    position:relative;
+    float:left;
+    /*border:1px solid black;*/
+    width:395px;
+    /*height:20px;*/
+    height:auto;
+    min-height:20px;
+    margin-bottom:10px;
+    margin-top:10px;
+    font-size:14px;
+    line-height:20px;
+}
+.details_sty1 {
+
+    width:700px;
+    height:auto;  
+   /*min-height:60px;*/
+}
+.dtext_sty {
+   position:absolute;
+   /*float:left;*/
+   color:#006666;
+   width:100px;
+   /*margin-right:10px;*/
+   left:0px;
+}
+.dtext_content {
+     position:absolute;
+     left:100px;
+     /*float:left;*/
+     color:#5F5D5D;
+     width:auto;
+     height:auto;
+}

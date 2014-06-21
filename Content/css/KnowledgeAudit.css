@@ -1,0 +1,193 @@
+﻿body
+{
+    font-family:微软雅黑;
+}
+#KnowledgeAudit_Top
+{
+     height:35px;width:100%;padding-left:0px;
+}
+#KnowledgeAudit_Top input
+{
+    border:1px solid #CECECE;
+    width:400px;
+    height:24px;
+    float:left;
+    color:#999;
+    padding:0 5px;
+    margin-top:10px;
+}
+.KnowledgeAudit_PageControl
+{
+    border:0px solid red;
+    width:300px;
+    height:20px;
+    position:relative;
+    float:right;
+    top:12px;
+    cursor:pointer; 
+    margin-bottom:40px; 
+    margin-right:65px;
+    font-size:12px;
+    color:#333;
+}
+#KnowledgeAudit_Search
+{
+    width:65px;
+    height:30px;
+    background:url(../../Content/img/search.jpg) no-repeat;
+    float:left;
+    margin-top:10px;
+    margin-left:10px;
+    cursor:pointer
+}
+#KnowledgeManage_Select_chosen 
+{
+    margin-top:20px;
+}
+#KnowledgeShowPlate
+{
+    position:relative;
+    top:0px;
+}
+.Knowledge_show
+{
+    width:95%; 
+    height:auto; 
+    float:left;
+    border-bottom:1px dashed #E0E0E0; 
+    padding-bottom:15px; 
+    padding-left:10px; 
+    padding-top:10px; 
+    margin-bottom:15px;
+
+}
+#Knowledge_show_Top
+{
+    width:80%; 
+    padding-bottom:10px;
+}
+.Knowledge_show_Font
+{
+    font-size:12px;
+    color:#555555;
+    margin-right:50px;
+}
+#Knowledge_show_Center
+{
+    width:80%; 
+    float:left;
+    height:auto;
+    line-height:28px;
+    overflow:hidden
+}
+.AriticleModify 
+{
+    width:30px; 
+    height:28px; 
+    background:url(../../Content/img/verify_icon.png) 110px center; 
+    position:absolute; 
+    right:190px;
+    cursor:pointer;
+    opacity:0.7;
+}
+
+.AuditPass
+{
+    width:30px; 
+    height:28px; 
+    background:url(../../Content/img/verify_icon.png) 40px center; 
+    position:absolute; 
+    right:140px;
+    cursor:pointer;
+    opacity:0.7;
+}
+.AuditUnqualified
+{
+    width:30px; 
+    height:28px; 
+    background:url(../../Content/img/verify_icon.png) -30px center; 
+    position:absolute; 
+    right:90px;
+    cursor:pointer;
+    opacity:0.7;
+}
+.AuditPass:hover, .AuditUnqualified:hover ,.AriticleModify:hover{
+    opacity:1;
+}
+#conver
+{
+    background:rgba(0,0,0,0.4);
+    position:fixed;
+    top:0px;
+    left:0px;
+    height:100%;
+    right:0px;
+    width:100%;
+    z-index:5000;
+}
+#AuditUnqualifiedMessage
+{
+    width:100%;
+    height:220px;
+    position:absolute;
+    background:#fff;
+    top:50%;
+    margin-top:-95px;
+}
+#message
+{
+    float:left;
+    margin-top:10px;
+}
+#AuditUnqualifiedMessage_OK
+{
+    clear:both;
+    width:90px;
+    height:34px;
+    text-align:center;
+    line-height:34px;
+    background-color:#ccc;
+    color:#017586;
+    left:440px;
+    position:relative;
+    top:10px;
+    cursor:pointer;
+}
+#AuditUnqualifiedMessage_OK:hover
+{
+    background:#017586;
+    color:#fff
+}
+#AuditUnqualifiedMessage_Title
+{
+    float:left; 
+    margin-top:15px; 
+    color:#017586;
+    font-size:16px;
+}
+#message_Error
+{
+    position:relative; 
+    top:15px; 
+    left:20px; 
+    font-size:12px; 
+    color:red;
+}
+#AuditUnqualifiedMessage_Close
+{
+    width:20px;
+    height:20px;
+    font-size:25px;
+    color:#000;
+    cursor:pointer;
+    float:right;
+    font-family:Arial;
+    font-weight:bold;
+    margin-top:4px;
+    margin-right:5px;
+    font-weight:bold;
+}
+#AuditUnqualifiedMessage_Close:hover
+{
+    color:#ff6400;
+}

@@ -1,0 +1,359 @@
+﻿body {
+}
+.namesContent
+{
+    width:110px;
+    height:auto;
+    border-right:2px solid #078A9B;
+    position:absolute;
+    top:50px;
+   
+}
+.nameList
+{
+    margin:0 auto;
+    margin-bottom:20px;
+}
+.nameList li
+{
+    margin-top:23px;
+    margin-left:28px;
+    /*color:black;*/
+    font-size:16px;
+    cursor:pointer;
+}
+.morenameList
+{
+    cursor:pointer;
+    width:57px;
+    height:16px;
+    margin-left:26px;
+    margin-bottom:10px;
+    background:url(../../../Content/RRWM/img/bottom.png);
+}
+.textColor
+{
+    color:#078a9b;
+}
+.morenameList_1
+{
+    background:url(../../../Content/RRWM/img/up.png);
+}
+#leftMainContent
+{
+    position:absolute;
+    width:1320px;
+    left:145px;
+    /*border:1px solid black;*/
+    top:10px;
+    bottom:0px;
+    /*width:90%;*/
+}
+#groupsName
+{
+    width:80px;
+    margin-left:10px;
+    height:30px;
+}
+.monthContent1
+{
+    position:absolute;
+    /*width:1320px;*/
+    /*height:100px;*/
+    /*border:1px solid blue;*/
+    /*left:145px;*/
+    top:40px;
+}
+
+.monthList1
+{
+    position:relative;
+    float:left;
+    width:108px;
+    margin-top:20px;
+    /*border:1px solid red;*/
+}
+.month_text1
+{ 
+    font-size:15px;
+    font-weight:bold;
+    margin-bottom:30px;
+    /*text-align:center;*/
+}
+.weekList1 li
+{   /*text-align:center;*/
+    margin-top:25px;
+    margin-bottom:0px;
+    font-size:14px;
+    cursor:pointer;
+}
+.daySty
+{
+    font-size:13px;
+}
+.moreMonth
+{   
+    position:fixed;
+    right:20px;
+    top:120px;
+    cursor:pointer;
+    width:14px;
+    height:47px;
+    margin-left:26px;
+    margin-bottom:10px;
+    z-index:5000;
+    background:url(../../../Content/RRWM/img/moreMonth.png);
+}
+.moreMonth_1
+{
+    position:fixed;
+    right:10px;
+    background:url(../../../Content/RRWM/img/moreMonth_1.png);
+}
+.score
+{
+    width:200px;
+    height:30px;
+    position:absolute;
+    top:340px;
+    left:-23px;
+    /*left:125px;*/
+}
+.yuandian
+{
+    width:15px;
+    height:13px;
+    float:left;
+    margin-top:5px;
+    background:url(../../../Content/RRWM/img/yd.png);
+}
+.scoreDetails,.scoring
+{
+    float:left;
+    margin-left:10px;
+    font-size:15px;
+    color:#ff7e15;
+    height:23px;
+    border-bottom:1px solid #ff7e15;
+    cursor:pointer;
+}
+.scoring
+{  
+    margin-left:20px;
+}
+#goback
+{
+    position:relative;
+    width:80px;
+    height:30px;
+    background-color:#ff7e15;
+    line-height:30px;
+    text-align:center;
+    margin-top:40px;
+    margin-right:30px;
+    color:white;
+    cursor:pointer;
+    float:right;
+}
+#yearHead
+{
+    position:absolute;
+    top:18px;
+    /*left:143px;*/
+    width:200px;
+    height:28px;
+    color:#ff7e15;
+    line-height:28px;
+    font-size:15px;
+}
+#searchYear
+{
+    width:100px;
+    margin-left:20px;
+    height:28px;
+}
+/*-------------------分数细节----------------*/
+.detailsHead
+{
+    position:absolute;
+    top:20px;
+    /*border:1px solid black;*/
+    height:30px;
+    right:20px;
+    left:145px;
+}
+.dateDetails
+{   position:absolute;
+   
+    font-size:15px;
+}
+#yearHeadLab, #monthHeadLab, #weekHeadLab
+{
+    margin-left:10px;
+    margin-right:10px;
+}
+#bonusTable1 thead tr th
+{
+    color:#ff7e15;
+    font-weight:normal;
+}
+#bonusTable2 thead tr th
+{
+  
+    font-weight:normal;
+}
+#bonusTable1 tbody tr td,#bonusTable2 tbody tr td
+{
+    color:#017586;
+    text-align:center;
+    padding-top:10px;
+}
+.totalBonus
+{
+    color:#ff7e15;
+    position:absolute;
+    right:20px;
+    font-size:15px;
+}
+.bounsContent
+{
+    position:relative;
+    margin-top:70px;
+    /*border:1px solid black;*/   
+    margin-left:115px;
+}
+.bounsContent2
+{
+    position:relative;
+    margin-top:20px;
+    /*border:1px solid black;*/
+    margin-left:130px;
+}
+/*-------------------给他打分----------------*/
+#scorinContent
+{
+    position:relative;
+    margin-top:30px;
+    margin-left:145px;
+    height:auto;
+    min-width:1000px;
+    /*border:1px solid black;*/
+}
+.scoring_Content
+{
+    width:500px;
+    /*border:1px solid grey;*/
+    height:25px;
+    float:left;
+    margin-top:15px;
+}
+.score_lable
+{
+    line-height:25px;
+    float:left;
+    font-size:15px;
+    color:#ff611c;
+}
+.score_lable1
+{
+    line-height:25px;
+    float:left;
+    margin-left:10px;
+    color:grey;
+}
+#workDay
+{
+    width:180px;
+}
+#notCommunicate
+{
+    width:135px;
+    float:left;
+}
+#notReport
+{
+    width:155px;
+    float:left;
+}
+#beyondExpectation
+{
+    width:143px;
+    float:left;
+}
+#absentDuty
+{
+    width:185px;
+    float:left;
+}
+#fullDuty
+{
+    width:155px;
+    float:left;
+}
+#creatIdea
+{
+    width:185px;
+    float:left;
+}
+#businessTravel
+{
+    width:155px;
+    float:left;
+}
+#training
+{
+    width:185px;
+    float:left;
+}
+#maneuver1
+{
+    width:155px;
+    float:left;
+}
+#maneuver2
+{
+    width:155px;
+    float:left;
+}
+#maneuver3
+{
+    width:155px;
+    float:left;
+}
+#determine
+{
+    width:80px;
+    height:30px;
+    background-color:#0c7d8d;
+    color:white;
+    position:absolute;
+    bottom:0px;
+    right:70px;
+    top:320px;
+    text-align:center;
+    line-height:30px;
+}
+#determine:hover
+{
+    cursor:pointer;
+    background-color:#bbbbbb;
+    color:#333;
+    
+}
+#monthTable thead tr th
+{
+    text-align:left;
+}
+#monthTable
+{
+    margin-top:20px;
+}
+#monthTable tbody tr
+{
+    margin-top:20px;
+}
+#monthTable tbody tr td
+{
+    
+    margin-top:10px;
+}

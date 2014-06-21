@@ -1,0 +1,197 @@
+﻿body {
+}
+#addTask_text {
+    position:absolute;
+    width:100px;
+    height:30px;
+    color:#017586;
+    font-size:18px;
+    top:10px;
+    left:10px;
+    text-align:right;
+}
+.tri_img {
+    position:absolute;
+    background-image: url(../../../Content/RRWM/img/u381.png);
+    left:5px;
+    top:10px;
+    color:#017586;
+    font-size:15px;
+    width:7px;
+    height:8px;
+}
+#Task_content {
+    position:absolute;
+    height:850px;
+    width:840px;
+    top:70px;
+    /*overflow-y:auto;*/
+    /*border:1px solid grey;*/
+    left:10%;
+}
+.date_sty {
+    position:relative;
+    width:840px;
+    height:30px;
+    /*border:1px solid grey;*/
+}
+.taskType_sty {
+
+    position:relative;
+    float:left;
+    width:420px;
+    margin-top:25px;
+    height:25px;
+    /*border:1px solid black;*/
+   
+}
+/*.taskType_sty3 {
+
+    width:830px;   
+}*/
+.input_sty {
+    border:1px solid #E3E3E3;
+    background-color:white;
+}
+.star_sty {
+    margin-left:10px;
+    color:red;
+    line-height:25px;
+}
+.Date_text {
+    height:50px;
+    width:100px;
+
+}
+.text_sty {
+    color:#017586;
+    margin-right:20px;
+    font-size:14px;
+}
+.text_redcolor {
+    color:#FF643D;
+}
+.text_sty2 {
+   
+    position:absolute;
+}
+#ProjectName {
+    width:220px;
+   margin-left:27px;
+}
+.text_stybh {
+    background-color:#99CCCC;
+    width:200px;
+    text-align:center;
+    height:25px;
+    line-height:20px;
+    margin-top:-20px;
+    margin-left:120px;
+}
+.taskType_sty2 {
+    height:100px;
+    width:830px;
+}
+
+#TaskTitle {
+    width:215px;
+    margin-left:27px;
+}
+#TaskSecondTitle {
+    width:215px;
+}
+.textareaSty{
+    margin-left:118px;
+}
+#ScheduleBonus 
+{
+    margin-left:30px;
+     width:100px;    
+}
+#TaskPerson {
+    margin-left:42px;
+    width:100px;
+}
+#TaskWeek {
+    width:100px;
+}
+#TaskChecker {
+    margin-left:15px;
+    width:100px;
+}
+#TaskMonth {
+    width:100px;
+}
+.button_sty {
+    width:75px;
+    height:30px;
+    margin-top:10px;
+    line-height:30px;
+    text-align:center;
+    cursor:pointer;
+    float:left;
+    color:white;
+    border-style:none;
+}
+
+#send {
+    border:1px solid white;
+     margin-left:550px;
+     margin-right:50px;
+     background-color:#187888;
+}
+#GoBack
+ {
+    border:1px solid #187888;
+    color:#187888;
+}
+#GoBack:hover,#send:hover{     
+     background-color:#CCCCCC;
+     color:#333333;
+     border:1px solid white;
+}
+#rwlb_text {
+   width:320px;
+   height:20px;
+   float:right;
+   /*border:1px solid #187888;*/
+}
+.rwlb_sty {
+    float:left;
+    margin-right:6px;
+    cursor:pointer;
+    height:20px;
+}
+.checkIcon {
+    background-image: url(../../../Content/RRWM/img/checkicon.png);
+    width:9px;
+    height:9px;
+    margin-top:-20px;
+    margin-left:-5px;
+
+}
+.checkIcon_sty {
+    background-color:#99CCCC;
+}
+/*-----------消息验证------------*/
+.msg_Error {
+    margin-left:15px;
+    color:red;
+}
+/*.msg_Ok {
+    position:relative;
+    margin-left:350px;
+    margin-top:-15px;
+    width:9px;
+    height:9px;
+    background-image: url(../../../Content/RRWM/img/checkicon.png);
+}*/
+.msg_ok {
+    position:relative;
+    margin-top:-15px;
+    margin-left:5px;
+    background-image: url(../../../Content/RRWM/img/checkicon.png);
+}
+/*.msg_Ok2 { 
+    margin-left:800px;
+}*/

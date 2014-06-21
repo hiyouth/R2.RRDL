@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root id="1" pid="0">
+  <title>常用服务</title>
+  <author>图层</author>
+  <lable>开发技术</lable>
+  <time>2013-10-11</time>
+  <hasChildren>true</hasChildren>
+  <isBottom>false</isBottom>
+  <node id="1_1" pid="1">
+    <title>Html</title>
+    <author>图层</author>
+    <lable>前端、HTML</lable>
+    <time>2013-10-11</time>
+    <hasChildren>true</hasChildren>
+    <isBottom>fasle</isBottom>
+    <node id="1_1_1" pid="1_1">
+      <title>html基础1</title>
+      <author>zzq</author>
+      <lable>前端、html</lable>
+      <time>2013-10-11</time>
+      <hasChildren>false</hasChildren>
+      <isBottom>true</isBottom>
+    </node>
+    <node id="1_1_2" pid="1_1">
+      <title>html基础2</title>
+      <author>zzq</author>
+      <lable>前端、html</lable>
+      <time>2013-10-11</time>
+      <hasChildren>false</hasChildren>
+      <isBottom>true</isBottom>
+    </node>
+    <node id="1_1_3" pid="1_1">
+      <title>html基础3</title>
+      <author>zzq</author>
+      <lable>前端、html</lable>
+      <time>2013-10-11</time>
+      <hasChildren>false</hasChildren>
+      <isBottom>true</isBottom>
+    </node>
+  </node>
+  <node id="1_2" pid="1">
+    <title>Css</title>
+    <author>图层</author>
+    <lable>前端、CSS</lable>
+    <time>2013-10-11</time>
+    <hasChildren>true</hasChildren>
+    <isBottom>fasle</isBottom>
+    <node id="1_2_1" pid="1_2">
+      <title>Css基础1</title>
+      <author>zzq</author>
+      <lable>前端、CSS</lable>
+      <time>2013-10-11</time>
+      <hasChildren>false</hasChildren>
+      <isBottom>true</isBottom>
+    </node>
+    <node id="1_2_2" pid="1_2">
+      <title>Css基础2</title>
+      <author>zzq</author>
+      <lable>前端、CSS</lable>
+      <time>2013-10-11</time>
+      <hasChildren>false</hasChildren>
+      <isBottom>true</isBottom>
+    </node>
+    <node id="1_2_3" pid="1_2">
+      <title>Css基础3</title>
+      <author>zzq</author>
+      <lable>前端、CSS</lable>
+      <time>2013-10-11</time>
+      <hasChildren>false</hasChildren>
+      <isBottom>true</isBottom>
+    </node>
+  </node>
+  
+</root>

@@ -1,0 +1,113 @@
+﻿#member_manage_right
+{
+    width:100%;
+    height:100%;    
+/*    border:1px solid black;   */
+}
+#upper
+{    
+    height:60px;
+    width:1080px;     
+    margin-bottom:0px;  
+    /*border:1px solid red;  */
+ }
+ #upper input
+ {
+     border:1px solid #CECECE;
+    width:400px;
+    height:24px;    
+    color:#999;
+    padding:0 5px;
+    margin-top:10px; 
+    float:left;  
+ }
+ #MemberSearch
+{
+    width:65px;
+    height:24px;
+    margin-top:10px; 
+    background:url(../../Content/img/search.jpg) no-repeat;   
+    float:left;    
+    position:inherit;
+    cursor:pointer;
+    margin-left:10px;
+}
+ #upper .pages
+{    
+    width:300px;
+    height:20px;  
+    cursor:pointer; 
+    margin-top:10px;
+    margin-bottom:0px; 
+    margin-right:2px;
+    font-size:12px;
+    color:#333;
+    float:right;
+}
+ #upper .pages .cell:hover
+{
+    color:#026673;
+}
+/***********************/
+
+#lower
+{
+    width:1080px;
+    height:auto;
+    float:left;            
+}
+
+#lower .member_board
+{
+    height:85px;    
+    width:238px;    
+    float:left;
+    margin-right:30px;
+    margin-bottom:20px;        
+    overflow:hidden;    
+    background-color:#018396;
+    cursor:pointer;
+ }
+ 
+#lower .member_board .img_name
+{
+    width:235px;
+     height:30px;
+     border:0px solid blue;       
+     float:left;    
+     margin-top:28px; 
+}
+.userImg
+ {
+    width:30px;
+    height:30px;    
+    margin-left:50px;
+    margin-right:10px;
+    border:0px solid red;
+    overflow:hidden;
+    background:url("../img/male.png") no-repeat 0px -30px ;
+    float:left;         
+     
+ } 
+.userName
+{
+     width:140px;
+    height:30px;
+    color:White;
+    font-size:24px;
+    border:0px solid blue;
+    float:left;
+    position:relative;
+    top:-3px;
+    text-align:center;
+}
+#UMUserGroupList
+{
+    height:140px;
+    width:700px;
+    position:relative;    
+    padding:0px;
+}
+
+
+

@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Resource";
+}
+<script src="@Url.Content("~/Scripts/LoginControlModule/Login.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/CommonModule/KnowledgeView/KnowledgeView.js")" type="text/javascript"></script>
+<link href="@Url.Content("~/Content/css/Login.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/css/KnowledgeView.css")" rel="stylesheet" type="text/css" />
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/ckeditor/ckeditor.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shCore.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushCpp.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushCSharp.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushCss.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushJava.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushJScript.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushPhp.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushSql.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushVb.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushXml.js")" type="text/javascript"></script>
+<link href="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/styles/shCore.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/styles/shThemeDefault.css")" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    SyntaxHighlighter.config.clipboardSwf = baseUrl + 'Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/clipboard.swf';
+    SyntaxHighlighter.all();
+    </script> 
+<script type="text/javascript">
+    $(function () {
+        intTree("资源信息");
+    })
+</script>
+
+<div id="Home">
+    <div id="HomeContent">
+        <div id="HomeLeft">
+            <div id="HomeLeft_content"><div id="layersTree" class="treePerent"></div></div>
+            <div id="HomeLeft_slide"></div>
+        </div>
+        <div id="HomeRight">
+        </div>
+        <!--HomeLeft结束-->
+    </div>
+    <!--HomeContent结束-->
+</div>
+

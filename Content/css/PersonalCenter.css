@@ -1,0 +1,711 @@
+﻿*
+{
+    padding:0;
+    margin:0;
+    font-family:"微软雅黑";
+}
+#Head 
+{
+    height:90px!important;
+}
+#Home
+{
+    width:100%;
+    height:auto;
+    float:left;   
+}
+#HomeContent
+{
+    min-width:1250px;
+    height:auto;    
+}
+#HomeLeft
+{
+    width:220px;
+    position:fixed;    
+    top:110px;
+    bottom:10px;
+    border-right:1px solid #999;
+    background:#fff;
+    z-index:2000;
+}
+#HomeRight
+{
+    width:auto;
+    float:left;
+    margin-left:300px;
+    background:#fff;
+    height:auto;
+    margin-top:100px;
+    z-index:1000;
+}
+/**************************************/
+#HomeLeft_content
+{   
+   width:80%;
+   padding-left:30px;
+}
+#HomeLeft_content #title
+{
+    font-size:18px;
+    color:#0E7E8C;
+    position:inherit;
+    left:10px;
+    margin-bottom:15px;
+}
+#HomeLeft_content #knowledgeManagement
+{    
+    font-size:14px;
+    color:#404040;
+    position:inherit;
+    left:10px;
+    cursor:pointer;     
+    margin-bottom:15px;
+}
+#HomeLeft_content #userManagement
+{    
+    font-size:14px;
+    color:#737373;
+    position:inherit;
+    left:10px;
+    cursor:pointer;     
+    
+}
+#HomeLeft_content .item:hover
+{
+    font-size:14px;
+    color:#017586;
+    position:inherit;
+    left:10px;
+    cursor:pointer;     
+    margin-bottom:15px;
+}
+
+.Manage_nav_title
+{
+    color:#017586;
+    font-size:18px;
+    padding-left:40px;
+    line-height:30px;
+}
+.Manage_nav
+{
+    width:150px;
+    height:auto;
+    font-size:14px;
+    line-height:20px;
+    margin-left:40px;
+}
+.Manage_nav div
+{
+    width:150px;
+    height:20px;
+    margin:15px 0;
+    padding-left:20px;
+    background:url(../../Content/img/m_icon.png) no-repeat left center;
+    cursor:pointer;
+}
+.Manage_nav div:hover
+{
+    color:#017586;
+}
+/*********************************************************************************/
+#HomeRight .right
+{
+    width:1030px;
+    height:auto;
+    float:left;    
+    margin-top:10px;
+    margin-bottom:25px;
+}
+#HomeRightHomeRight .right #upper
+{
+    border:0px solid black;height:auto;width:1030px; padding-left:0px;float:right;   
+}
+
+#HomeRight .right #upper #search
+{
+    cursor:pointer;
+    float:left;
+    margin-top:10px;
+    padding-left:5px;      
+ }
+#HomeRight .right input
+{
+    border:1px solid #CECECE;
+    width:400px;
+    height:24px;
+    float:left;
+    color:#999;
+    padding:0 5px;
+    margin-top:10px;
+}
+
+#HomeRight .right  #upper .pages
+{
+    width:300px;
+    height:20px;
+    float:right;    
+    cursor:pointer; 
+    font-size:12px;
+    color:#333;
+    margin-top:10px;
+    padding-right:0px;
+    position:relative;
+}
+#HomeRight .right  #upper .pages td:hover
+{   
+    cursor:pointer;    
+    color:#208591;
+    
+}
+/***********************************************/
+/*当前知识条目*/
+.konwledgeItem
+{
+    margin-top:25px;
+    border:0px dashed green;
+    float:left;
+    width:95%;
+    min-height:80px;
+    margin-bottom:15px;    
+    padding-bottom:10px;
+    border-bottom:1px dashed #ccc;   
+}
+
+/*知识标题   系统通知图标*/
+#upper .title_message 
+{
+    color:#0C7D8B;      
+    text-align:left;    
+    width:100%;  
+    height:20px;      
+    border:0px solid red; 
+    margin-bottom:15px;
+}
+#upper .title_message div
+{
+    float:left;
+    margin-right:30px;
+    font-size:16px;  
+    border:0px solid red;
+    cursor:pointer; 
+    color:#0C7D8B;            
+}
+/*知识分类 审核状态 某人何时上传 某人何时审核*/
+#upper .type_state_date
+{   
+   font-size:14px;   
+   width:100%;   
+   min-width:80%;
+   height:26px;   
+   border:0px solid black;
+   color:#666;      
+ }
+ #upper .type_state_date div
+ {
+    width:auto;
+    height:auto;
+    float:left;
+    margin-right:30px;                
+ }
+/*修改与删除图标*/
+#upper .type_state_date .img
+{
+   width:102px;
+   height:26px;
+   float:right;
+   margin-right:0px;  
+   margin-top:-10px;
+}
+#upper .type_state_date .img div
+{
+    height:26px;
+    width:26px;
+    float:right;     
+    cursor:pointer;  
+    margin-right:0px;
+    margin-left:25px;    
+}
+.modify
+{  
+    background:url(../../Content/img/verify_icon.png) no-repeat;  
+    opacity:0.7;
+}
+.delete
+{
+    background:url(../../Content/img/verify_icon.png) no-repeat -35px 0;  
+    opacity:0.7;
+}
+.modify:hover,.delete:hover
+{
+    opacity:1;
+}
+/*知识详情*/
+#upper .konwledgeItem .details
+{   
+    width:80%;
+    font-size:12px;
+    color:#666; 
+    height:auto;
+    overflow:hidden;     
+    line-height:28px;
+    text-indent:2em;
+}
+#lower
+{
+    width:auto;
+    height:auto;
+    padding-left:30px;
+    color:Black;
+    font-size:12px;
+    display:none;
+    color:#4D4D4D;
+    font-size:14px;    
+    padding-bottom:300px;
+}
+#lower div
+{
+    width:80px;
+    height:25px;
+    background-color:#0C7D8B;
+    color:White;
+    font-size:12px;
+    position:relative;
+    left:320px;
+    cursor:pointer;
+    text-align:center;
+    line-height:28px;    
+}
+#lower span
+{
+    color: red;   
+}
+/************************************************************/
+
+/***********************************************************************/
+/*   下面是页面右上角  个人中心部分的 内容*/
+.btn
+{
+    float:left;                                               
+    cursor:pointer;
+    font-family:微软雅黑;
+    font-size:12px;             
+}
+.btn:hover
+{
+     color:#107C89;             
+}            
+.line
+{
+    width:1px;
+    height:70%;   
+    border-right:1px solid #CCCCCC;         
+    float:left;
+    margin:0px 2px 0px 2px;
+}
+
+/***********个人中心里查看知识详情的div面板的样式**********************/
+
+#personalCenterPreview
+{
+    position:absolute;
+    top:55px;
+    left:15%;
+    width:70%;
+    bottom:auto;
+    display:none;
+    border:1px solid green;
+    background-color:White;
+    z-index:5000;
+}
+.ckeditorPreview_Show
+{
+    margin-left:80px;
+    margin-top:10px;
+    font-size:15px;
+    float:left;
+    line-height:30px;
+}
+#personalCenterPreview_Content
+{
+    width:80%;
+    height:auto;
+    overflow:auto;
+    padding-bottom:30px;
+}
+#personalCenterPreview_Title
+{
+    font-size:22px;
+    float:left;
+    width:100%;
+}
+#personalCenterPreview_Close
+{
+    width:20px;
+    height:20px;
+    font-size:18px;
+    color:#000;
+    position:absolute;
+    top:5px;
+    right:3px;
+    cursor:pointer;
+    font-family:Arial;
+    font-weight:bold;
+}
+#personalCenterPreview_Close:hover
+{
+    color:#ff6400;
+}
+#personalCenterConver
+{
+    background:rgba(0,0,0,0.4);
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    height:100%;
+    right:0px;
+    width:100%;
+    z-index:4500;
+}
+
+/*********************  这是修改知识页面的样式 **************************/
+
+#modifyCenter
+{
+    width:100%;
+    height:600px;
+    margin:auto;
+    margin-top:100px;
+    border:1px solid red;  
+    position:fixed;  
+    background-color:White;
+}
+#modifyLeft
+{
+    width:500px;
+    height:100px;
+    float:left;
+    border:1px solid black;   
+}
+.Left_Plate
+{
+    margin-top:40px;
+    font-family:微软雅黑;
+    color:#595959;
+    font-size:12px;
+    width:auto;
+}
+#modifyLeft_Tilte_Input
+{
+    height:25px;
+    width:310px;
+    margin-left:15px;
+}
+#modifyLeft_Classification_Select
+{
+    height:100px;
+    width:390px;
+    position:relative;
+    margin-top:-30px;
+    left:60px;
+    border:1px solid yellow;
+}
+.modifytitle
+{
+    height:28px;
+    width:98px;
+    float:left;
+    margin-top:10px;
+    margin-left:10px;
+    padding-top:12px;
+    cursor:pointer;
+    text-align:center;
+}
+.modifytitle0
+{
+    background-color:#F2D6D6;
+}
+.modifytitle1
+{
+    background-color:#E3E5F9;
+}
+.modifytitle2
+{
+    background-color:#D6E7F0;
+}
+.modifytitle3
+{
+    background-color:#E9ECDB;
+}
+.modifytitle4
+{
+    background-color:#83D6E0;
+}
+#modifyLeft_Classification_Select_Leaf
+{
+    height:25px;
+    width:310px;
+    margin-left:68px;
+    border:1px solid red;
+}
+#modifyLeft_Open_Text
+{
+    height:auto;
+    width:310px;
+    margin-left:15px;
+    position:relative;
+    margin-top:-17px;
+    left:54px;
+    font-size:15px;
+    color:#000;
+}
+#modifyLeft_Open_Select
+{
+    width:350px;
+    margin-top:0px;
+    margin-left:66px;
+}
+.group
+{
+    width:70px;
+    height:23px;
+    float:left;
+    margin-left:3px;
+    margin-top:10px;
+    padding-left:30px;
+    padding-top:7px;
+    font-size:12px;
+    cursor:pointer;
+}
+.Select_Icon
+{
+    background:url("../img/little_icon.png") right center;
+    background-repeat:no-repeat;
+    width:14px;
+    height:15px;
+    position:relative;
+    top:-15px;
+    left:50px;
+}
+#modifyLeft_Tag_Input
+{
+    clear:both;
+    height:25px;
+    width:170px;
+    margin-left:15px;
+}
+#modifyLeft_Tag_Show
+{
+    width:330px;
+    margin-left:15px;
+    position:relative;
+    margin-top:-17px;
+    left:45px;
+}
+#modifyTag_Add
+{
+    background:url("../img/little_icon.png") left center;
+    width:15px;
+    height:15px;
+    background-repeat:no-repeat;
+    position:relative;
+    top:-23px;
+    left:251px;
+    cursor:pointer;
+}
+.tag
+{
+    height:23px;
+    width:135px;
+    float:left;
+    margin-top:10px;
+    margin-left:10px;
+    padding-top:7px;
+    cursor:pointer;
+    text-align:center;
+    display:none;
+}
+.Tag_Error
+{
+    font-size:12px;
+    color:Red;
+    margin-left:30px;
+}
+.Tag_Close
+{
+    font-family:Arial;
+    font-size:12px;
+    margin-left:120px;
+    margin-top:-20px;
+}
+.Left_Btn
+{
+    width:100px;
+    height:45px;
+    position:relative;
+    cursor:pointer;
+}
+#modifypreview
+{
+    margin-left:120px;
+    background:url("../img/previewBtn.png");
+}
+#modifyupload
+{
+    margin-left:280px;
+    margin-top:-45px;
+    background:url("../img/uploadBtn.png");
+}
+#modifyRight
+{
+    width:auto;
+    height:auto;
+    float:right;
+    position:absolute;
+    right:20px;
+    top:120px;
+}
+#modifyckeditor
+{
+    width:500px;
+    height:300px;
+    border:1px solid green;
+    
+ }
+.Reg_TR
+{
+    height:50px;
+    position:relative;
+    bottom:-20px;
+}
+.Reg_TD
+{
+    text-align:right;
+    font-size:14px;
+}
+.Reg_TD_Inf
+{
+    color:#666666;
+    font-size:12px;
+    position:relative;
+    left:10px;
+    top:15px;
+    float:left;
+}
+.Reg_Input
+{
+    width:240px!important;
+    height:28px;
+    float:left;
+    padding:0 5px;
+}
+#PwdModify_Submit
+{
+    width:100px;
+    height:34px;
+    background-color:#017586;
+    color:White;
+    margin-top:70px;
+    margin-left:280px;
+    float:left;
+    cursor:pointer;
+    text-align:center;
+    line-height:34px;
+}
+#PwdModify_Reset
+{
+    width:100px;
+    height:34px;
+    background-color:#017586;
+    color:White;
+    margin-top:70px;
+    margin-left:470px;
+    cursor:pointer;
+    text-align:center;
+    line-height:34px;
+}
+#PwdModify_Submit:hover , #PwdModify_Reset:hover
+{
+    background:#ccc;
+    color:#333;
+}
+.Reg_Error
+{
+    margin-left:10px;
+    color:Red;
+    font-size:12px;
+    position:relative;
+    top:15px;
+}
+.explain
+{
+    position:relative;
+    top:30px;
+}
+#explain
+{
+    float:left;
+}
+.explainInf
+{
+    position:relative;
+    top:30px;
+}
+.Reg_Right
+{
+    float:left;
+    background-position:-65px;
+    background-image:url("../img/verify_icon.png");
+    background-repeat:no-repeat;
+    width:30px;
+    height:30px;
+    position:relative;
+    top:8px;
+}
+
+/*10-22日 加*/
+
+#PresonalDelete
+{
+    width:100%;
+    position:fixed;
+    top:0;
+    bottom:0;
+    z-index:5000;
+    background:rgba(0,0,0,0.4);
+}
+ .deleteBtn:hover
+{
+    background:#017586!important;
+}
+#baseinf {
+    margin-left:0px;
+    width:330px;
+    height:auto;
+    margin-top:30px;
+    font-size:15px;
+}
+.baseinf_title {
+    margin-top:20px;
+    width:100px;
+    text-align:right;
+    color:#017586;
+}
+ .baseinf_content {
+    width:200px;
+    position:relative;
+    top:-20px;
+    left:105px;
+}
+
+ /*  ZHAOs  2013年12月3日11:52:27*/
+#KnowledgeManage_Select
+{
+    width:160px;
+    height:24px;
+    position:relative;
+    top:10px;
+    margin-left:30px;
+}

@@ -1,0 +1,245 @@
+﻿body
+{
+    background:#fff;
+}
+#Copyright
+{
+    width:100%;
+    height:20px;
+    float:left;
+    line-height:20px;
+    margin-top:15px;
+    font-size:12px;
+    color:#666;
+    text-align:center;
+}
+/*Head 部分的 css*/
+#Head
+{
+    width:100%;
+    min-width:900px;
+    height:90px;
+    border-bottom:1px solid #ccc;
+    position:fixed;
+    top:0;
+    background:#fff;
+    z-index:3000;
+}
+#Head_left
+{
+    width:auto;
+    height:auto;
+    position:absolute;
+    left:30px;
+    top:20px;
+}
+#Head_title
+{
+    width:auto;
+    height:30px;
+}
+#Head_logo
+{
+    width:380px;
+    height:30px;
+    float:left;
+    background:url(../../Content/img/top_title1.png) no-repeat;
+}
+#Head_beta
+{
+    width:60px;
+    float:left;
+    line-height:40px;
+    color:#ff6400;
+    font-size:16px;
+    margin-left:10px;
+}
+#Head_beta span
+{
+    color:#ff6400;
+    padding-left:2px;
+}
+#Head_nav
+{
+    width:610px;
+    height:20px;
+    margin-top:12px;
+}
+#Head_nav a
+{
+    width:auto;
+    height:20px;
+    line-height:20px;
+    float:left;
+    margin-right:30px;
+    font-size:15px;
+    color:#000;
+    text-decoration:none;
+}
+#Head_nav a:hover
+{
+    color:#017586;
+}
+.present_nav
+{
+    color:#017586!important;
+}
+#Head_right
+{
+    width:auto;
+    height:70px;
+    position:absolute;
+    right:30px;
+    top:20px;
+    font-size:12px;
+}
+#Head_user
+{
+    width:auto;
+    height:20px;
+    float:right;
+}
+#user_name {
+    cursor:text!important;
+}
+#Head_user div
+{
+    float:left;
+    margin-left:10px;
+}
+#Head_welcome
+{
+    color:#017586;
+}
+.ariticleRankList 
+{
+    color:#017586;
+    cursor:pointer;
+}
+.ariticleRankList:hover
+ {
+    color:#FFD700;
+}
+#Head_login
+{
+    cursor:pointer;
+}
+#Head_login:hover
+{
+    color:#017586;
+}
+
+#Head_search
+{
+    width:500px;
+    /*height:30px;*/
+    position:absolute;
+    /*position:relative;*/
+    top:15%;
+    right:50%;
+    margin-right:-250px;
+    margin-top:-50px;
+    text-align:center;
+
+    /*bottom:10px;*/
+}
+#serch_logo
+{
+    /*position:absolute;*/
+    width:470px;
+    height:190px;
+    margin-left:0px;
+    margin-bottom:20px;
+    background:url(../../Content/img/ll4.jpg);
+}
+/*#HeadSearch
+{
+    width:232px;
+    width:80%;
+    min-width:250px;
+    height:25px;
+    padding:0 5px;
+    border:none;
+    line-height:20px;
+    background:#dedede;
+    outline:none;
+    float:left;
+    color:#999;
+	font-size:12px;
+}*/
+#HeadSearch
+{
+    /*width:232px;*/
+    width:450px;
+    min-width:250px;
+    height:30px;
+    padding:0 5px;
+    border:1px solid #dedede;
+    border-radius:5px;
+    line-height:20px;
+    outline:none;
+    float:left;
+    color:#999;
+	font-size:12px;
+}
+#HeadSearch:hover
+{
+    border:1px solid #a4ced3;
+}
+/*#HeadSearch_icon
+{
+    width:32px;
+    height:25px;
+    float:left;
+    background:url(../../Content/img/search_img.png);
+    cursor:pointer;
+}*/
+#HeadSearch_icon
+{
+    width:25px;
+    height:25px;
+    float:left;
+    margin-top:3px;
+    margin-left:10px;
+    background:url(../../Content/img/search2.png);
+    cursor:pointer;
+}
+.headText
+{
+    position:absolute;
+    top:250px;
+    /*color:#a1caba;*/
+     color:#58a6af;
+    left:150px;
+}
+/*用户登陆后*/
+
+#user
+{
+    width:auto;
+}
+#user div
+{
+    float:left
+}
+#user_name
+{
+    color:#017586;
+    cursor:pointer;
+}
+#user_upload,#user_center,#user_exit,#user_manage,.ariticleRankList
+{
+    color:#000;
+    cursor:pointer;
+}
+#user_upload:hover,#user_center:hover,#user_exit:hover,#user_manage:hover,.ariticleRankList:hover
+{
+    color:#017586;
+}
+.user_line
+{
+    width:1px;
+    height:14px;
+    background:#999;
+    margin-top:2px;
+}

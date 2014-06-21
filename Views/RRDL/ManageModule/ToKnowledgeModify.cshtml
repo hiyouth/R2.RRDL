@@ -1,0 +1,114 @@
+﻿@{
+    ViewBag.Title = "KnowledgeModify";
+}
+<link href="@Url.Content("~/Content/css/ManageModule.css")" rel="stylesheet" type="text/css" />
+<script src="@Url.Content("~/Scripts/ManageModule/KnowledgeModify.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/ckeditor/ckeditor.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shCore.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushCpp.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushCSharp.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushCss.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushJava.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushJScript.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushPhp.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushSql.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushVb.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushXml.js")" type="text/javascript"></script>
+<link href="@Url.Content("~/Content/css/UploadKonwledge.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/styles/shCore.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/styles/shThemeDefault.css")" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    SyntaxHighlighter.config.clipboardSwf = baseUrl + 'Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/clipboard.swf';
+    SyntaxHighlighter.all();
+    </script> 
+<style type="text/css">
+    .navigation,.navigation_manage {
+         font-family:微软雅黑;
+         font-size:12px;
+         cursor:pointer;
+    }
+        .navigation:hover {
+            color:#0C7D8B;
+            position:relative;
+        }
+</style>
+<div id="Home">
+    <!--Head结束-->
+    <div id="Center">
+        <div id="Left">
+        <div style=" width:1px; height:630px; float:right;border-right:1px dashed #C4C4C4;"></div>
+        <div style=" float:right;">
+        <div style=" width:450px; height:10px;"></div>
+            <div class="Left_Plate" style=" margin-top:-30px; margin-left:10px; color:#000;">
+                当前位置：<font class="navigation">管理中心</font> &rarr; <font style="color:#017586">知识修改</font>
+            </div>
+            <div class="Left_Plate" style=" margin-top:20px;">
+                &nbsp;&nbsp;&nbsp;标&nbsp;&nbsp;题：<input id="Left_Tilte_Input"/><input id="ariticleId" type="hidden"/>
+            </div>
+            <div class="Left_Plate">
+                &nbsp;&nbsp;&nbsp;分&nbsp;&nbsp;类：<div id="Left_Classification_Select"></div>
+            </div>
+            <div class="Left_Plate">
+                <input id="Left_Classification_Select_Leaf" disabled="disabled"/>
+            </div>
+            <div class="Left_Plate">
+                &nbsp;&nbsp;&nbsp;可&nbsp;&nbsp;见：&nbsp;&nbsp;&nbsp;&nbsp;1.默认为全部可见，即<font style="color:red;">无勾选项</font>则对<font style="color:red;">全部分组</font>可见<br /><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.若要设置<font style="color:red;">仅对部分分组</font>可见，请勾选可见分组
+            </div>
+            <div class="Left_Plate">
+                <div id="Left_Open_Text"></div>
+            </div>
+            <div id="Left_Open_Select">
+            </div>
+            <div class="Left_Plate" style=" margin-top:30px;">
+                &nbsp;&nbsp;&nbsp;标&nbsp;&nbsp;签：<input id="Left_Tag_Input"/><div id="Tag_Add"></div>
+            </div>
+            <div class="Left_Plate" style=" margin-top:10px;">
+                <div id="Left_Tag_Show"></div>
+            </div>
+            </div>
+            
+        </div>
+        <div id="Right">
+           <div class="UploadRight_title"></div>
+           <textarea rows="30" cols="50" name="editor01" id="ckeditor"></textarea>
+           <div id="update" class="UploadKnowledge_Btn">修&nbsp;&nbsp;&nbsp;改</div>
+           <div id="preview" class="UploadKnowledge_Btn" style=" margin-right:50px;">预&nbsp;&nbsp;&nbsp;览</div>
+            <div id="code">添加代码</div>
+           <div class="Upload_Error">上传内容不能为空</div>
+        </div>
+    </div>
+    <div id="OpenList" style="display:none;">@ViewBag.OpenString</div>
+    <div id="Ariticle" style="display:none;">@ViewBag.Ariticle</div>
+    <div id="TreePath" style="display:none;">@ViewBag.TreePath</div>
+    <div id="TreeId" style="display:none;">@ViewBag.TreeId</div>
+    <div id="visibilityList" style="display:none;">@ViewBag.visibilityList</div>
+    <div id="ModifyAriticleFlag" style="display:none;">ModifyAriticleFlag</div>
+    <div id="author" style="display:none;">@ViewBag.author</div>
+    <div id="createTime" style="display:none;">@ViewBag.createTime</div>
+</div>
+<div id="UploadKonwledge_BackgroundConver">
+    <div id="AddCodePlate">
+        <font id="AddCodePlate_Title">Add a code snippet</font>
+        <div id="AddCodeMain">
+            Select_Language
+            <select id="Select_Language">
+                   <option value="csharp">C#</option>
+                   <option value="cpp">C++</option>
+                   <option value="css">CSS</option>
+                   <option value="jscript">JavaScript</option>
+                   <option value="java">Java</option>
+                   <option value="xml">XML/HTML</option>
+                   <option value="sql">SQL</option>
+                   <option value="php">PHP</option>
+                   <option value="vb">VB</option>
+               </select>
+            <div>
+                <textarea  id="CodeContent"></textarea>
+            </div>
+        </div>
+        <div class="AddCode_Btn" id="AddCode_Ok">ok</div>
+        <div class="AddCode_Btn" id="AddCode_Close">close</div>
+    </div>
+     <div id="cookieFlag" style="display:none;">cookieFlag</div>
+</div>

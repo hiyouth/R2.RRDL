@@ -1,0 +1,26 @@
+﻿body {
+}
+/*.textcontent_sty {
+    border:1px solid black;
+    margin-left:20px;
+    color:#505050;
+}*/
+.pageTitle_{
+    position:absolute;
+    width:90px;
+    height:30px;
+    color:#017586;
+    font-size:18px;
+    top:10px;
+    left:10px;
+    text-align:right;
+}
+.HandOverTask_details {
+     position:absolute;
+     width:100%;
+     left:0px;
+     right:0px;
+     top:640px;
+     height:300px;
+     /*border:1px solid grey;*/
+}

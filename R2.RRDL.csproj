@@ -1,0 +1,760 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9713E336-C1FF-4A79-AC8D-AC77FCA8009F}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>R2.RRDL</RootNamespace>
+    <AssemblyName>R2.RRDL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>ThirdParty\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="R2.Helper">
+      <HintPath>..\..\R2.Helper\bin\Debug\R2.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.3.0.20105.1\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.1.0.20105.408\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessModel\RRDL\AriticleApproveService.cs" />
+    <Compile Include="BusinessModel\RRDL\AriticleService.cs" />
+    <Compile Include="BusinessModel\BusinessModelBase.cs" />
+    <Compile Include="BusinessModel\RRDL\BusinessStrategy\UserDeleteCheck.cs" />
+    <Compile Include="BusinessModel\RRDL\BusinessStrategy\UserGroupDeleteCheck.cs" />
+    <Compile Include="BusinessModel\RRDL\ContactPersonService.cs" />
+    <Compile Include="BusinessModel\RRDL\IBusinessStrategy\IUserDeleteCheck.cs" />
+    <Compile Include="BusinessModel\RRDL\IBusinessStrategy\IUserGroupDeleteCheck.cs" />
+    <Compile Include="BusinessModel\RRDL\Login.cs" />
+    <Compile Include="BusinessModel\RRDL\Register.cs" />
+    <Compile Include="BusinessModel\RRDL\Tree.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessModel\RRDL\TreeSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessModel\RRDL\UserGroupService.cs" />
+    <Compile Include="BusinessModel\RRDL\UserService.cs" />
+    <Compile Include="BusinessModel\RRWM\BonusService.cs" />
+    <Compile Include="BusinessModel\RRWM\TaskService.cs" />
+    <Compile Include="BusinessModel\RRWM\TaskSNService.cs" />
+    <Compile Include="BusinessModel\RRWM\ProjectService.cs" />
+    <Compile Include="BusinessModel\ModelServiceBase.cs" />
+    <Compile Include="Controllers\RRDL\AboutController.cs" />
+    <Compile Include="Controllers\RRDL\AriticleController.cs" />
+    <Compile Include="Controllers\RRDL\AriticleRankListController.cs" />
+    <Compile Include="Controllers\RRDL\CommentController.cs" />
+    <Compile Include="Controllers\RRDL\ContactPersonController.cs" />
+    <Compile Include="Controllers\RRDL\DevelopTechController.cs" />
+    <Compile Include="Controllers\RRDL\DocController.cs" />
+    <Compile Include="Controllers\RRDL\GISController.cs" />
+    <Compile Include="Controllers\RRDL\HeadSearchController.cs" />
+    <Compile Include="Controllers\RRDL\HomeController.cs" />
+    <Compile Include="Controllers\RRDL\HomePageLeftController.cs" />
+    <Compile Include="Controllers\RRDL\KnowledgeAuditSearchController.cs" />
+    <Compile Include="Controllers\RRDL\KnowledgeManageSearchController.cs" />
+    <Compile Include="Controllers\RRDL\LoginController.cs" />
+    <Compile Include="Controllers\RRDL\ManageModuleController.cs" />
+    <Compile Include="Controllers\RRDL\MemberManageController.cs" />
+    <Compile Include="Controllers\RRDL\MemberManageSearchController.cs" />
+    <Compile Include="Controllers\RRDL\NewUserSearchController.cs" />
+    <Compile Include="Controllers\RRDL\PageControlController.cs" />
+    <Compile Include="Controllers\RRDL\PersonalCenterController.cs" />
+    <Compile Include="Controllers\RRDL\PersonalCenterSearchController.cs" />
+    <Compile Include="Controllers\RRDL\PraiseController.cs" />
+    <Compile Include="Controllers\RRDL\PraiseLinkUserController.cs" />
+    <Compile Include="Controllers\RRDL\RankListController.cs" />
+    <Compile Include="Controllers\RRDL\RegisterController.cs" />
+    <Compile Include="Controllers\RRDL\ResourceController.cs" />
+    <Compile Include="Controllers\RRDL\SearchController.cs" />
+    <Compile Include="Controllers\RRDL\SearchUsersController.cs" />
+    <Compile Include="Controllers\RRDL\ServiceController.cs" />
+    <Compile Include="Controllers\RRDL\TeamWorkController.cs" />
+    <Compile Include="Controllers\RRDL\TreeViewController.cs" />
+    <Compile Include="Controllers\RRDL\UpImgController.cs" />
+    <Compile Include="Controllers\RRDL\UserGroupManageController.cs" />
+    <Compile Include="Controllers\RRDL\UserVerifyController.cs" />
+    <Compile Include="Controllers\RRWM\DesignController.cs" />
+    <Compile Include="Controllers\RRWM\ExportWMExcelController.cs" />
+    <Compile Include="Controllers\RRWM\TaskHoursStatisticsController.cs" />
+    <Compile Include="Controllers\RRWM\WMProjectController.cs" />
+    <Compile Include="Controllers\RRWM\WMTaskController.cs" />
+    <Compile Include="Controllers\RRWM\WMUserController.cs" />
+    <Compile Include="Controllers\RRWM\WorkManagerHomeController.cs" />
+    <Compile Include="Global\CustomerRazorViewEngine.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201311181014389_InitialCreate.cs" />
+    <Compile Include="Migrations\201311181014389_InitialCreate.Designer.cs">
+      <DependentUpon>201311181014389_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201404300308224_AddContactPersons.cs" />
+    <Compile Include="Migrations\201404300308224_AddContactPersons.Designer.cs">
+      <DependentUpon>201404300308224_AddContactPersons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\RRDL\Ariticle.cs" />
+    <Compile Include="Models\RRDL\AriticleApprove.cs" />
+    <Compile Include="Models\RRDL\Comment.cs" />
+    <Compile Include="Models\RRDL\ContactPerson.cs" />
+    <Compile Include="Models\RRDL\EnumAriticleApproveStatus.cs" />
+    <Compile Include="Models\RRDL\EnumUserApproveStatus.cs" />
+    <Compile Include="Models\RRDL\knowledgeItem.cs" />
+    <Compile Include="Models\RRDL\MyAutoMapper.cs" />
+    <Compile Include="Models\RRDL\Praise.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\RRDL\PraiseLinkUser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\RRDL\Repository\AriticleApproveRepository.cs" />
+    <Compile Include="Models\RRDL\Repository\AriticleVisibilityRepository.cs" />
+    <Compile Include="Models\RRDL\Repository\AriticleRepository.cs" />
+    <Compile Include="Models\RRDL\Repository\AriticleTagRepository.cs" />
+    <Compile Include="Models\RRDL\Repository\CommentRepository.cs" />
+    <Compile Include="Models\RepositoryBase.cs" />
+    <Compile Include="Models\RRDL\Repository\ContactPersonRepository.cs" />
+    <Compile Include="Models\RRDL\Repository\PraiseLinkUserRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\RRDL\Repository\PraiseRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\RRDL\Repository\TreeNodeRepository.cs" />
+    <Compile Include="Models\RRDL\Repository\TreeRootPrefixRepository.cs" />
+    <Compile Include="Models\RRDL\Repository\UserGroupRepository.cs" />
+    <Compile Include="Models\RRDL\Repository\UserRepository.cs" />
+    <Compile Include="Models\RRDL\TreeNode.cs" />
+    <Compile Include="Models\RRDL\Mapping\AriticleTagMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\RRDL\RRDLEntities.cs" />
+    <Compile Include="Models\RRDL\AriticleTag.cs" />
+    <Compile Include="Models\RRDL\TreeNodeBasic.cs" />
+    <Compile Include="Models\RRDL\TreeRootPrefix.cs" />
+    <Compile Include="Models\RRDL\User.cs" />
+    <Compile Include="Models\RRDL\EnumUserCategory.cs" />
+    <Compile Include="Models\RRDL\UserGroup.cs" />
+    <Compile Include="Models\RRDL\AriticleVisibility.cs" />
+    <Compile Include="Models\RRDL\Util\JSONIgnore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\RRDL\Util\LinqHelper.cs" />
+    <Compile Include="Models\RRDL\Mapping\MySchema.cs" />
+    <Compile Include="Models\RRWM\Bonus.cs" />
+    <Compile Include="Models\RRWM\Common\TaskProjectNoRepeatComparer.cs" />
+    <Compile Include="Models\RRWM\EnumTaskType.cs" />
+    <Compile Include="Models\RRWM\Mapping\MyRRWMSchema.cs" />
+    <Compile Include="Models\RRWM\Project.cs" />
+    <Compile Include="Models\RRWM\Repository\TaskRepository.cs" />
+    <Compile Include="Models\RRWM\Repository\TaskSNRepository.cs" />
+    <Compile Include="Models\RRWM\Repository\TestRepository.cs" />
+    <Compile Include="Models\RRWM\Repository\ProjectRepository.cs" />
+    <Compile Include="Models\RRWM\Task.cs" />
+    <Compile Include="Models\RRWM\RRWMEntities.cs" />
+    <Compile Include="Models\RRWM\EnumTaskCategory.cs" />
+    <Compile Include="Models\RRWM\EnumTaskStatus.cs" />
+    <Compile Include="Models\RRWM\TaskSN.cs" />
+    <Compile Include="Models\RRWM\Test.cs" />
+    <Compile Include="Models\RRWM\TaskComment.cs" />
+    <Compile Include="Models\RRWM\EnumTaskProcessStatus.cs" />
+    <Compile Include="Models\RRWM\UserBonus.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test\Test.cs" />
+    <Compile Include="ViewModel\RRDL\AriticleJson.cs" />
+    <Compile Include="ViewModel\RRDL\AriticleViewModel.cs" />
+    <Compile Include="ViewModel\RRDL\ContacPerson\ChangeContactPersonViewModel.cs" />
+    <Compile Include="ViewModel\RRDL\ContacPerson\ContactPersonViewModelBase.cs" />
+    <Compile Include="ViewModel\RRDL\ContacPerson\CreateContactPersonViewModel.cs" />
+    <Compile Include="ViewModel\RRDL\MemberViewModel.cs" />
+    <Compile Include="ViewModel\RRDL\RankListMember.cs" />
+    <Compile Include="ViewModel\RRDL\TreeViewModel.cs" />
+    <Compile Include="ViewModel\RRDL\UserGroupViewModel.cs" />
+    <Compile Include="ViewModel\RRDL\UserViewModel.cs" />
+    <Compile Include="ViewModel\RRDL\VisibilityViewModel.cs" />
+    <Compile Include="ViewModel\RRWM\AllAttrTask.cs" />
+    <Compile Include="ViewModel\RRWM\ComplexTask.cs" />
+    <Compile Include="ViewModel\RRWM\TempTask.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\Microsoft.QualityTools.Testing.Fakes.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\R2.Helper.dll" />
+    <Content Include="bin\R2.Helper.pdb" />
+    <Content Include="bin\R2.Helper.xml" />
+    <Content Include="bin\R2.RRDL.dll" />
+    <Content Include="bin\R2.RRDL.pdb" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Providers.dll" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Web.Providers.resources.dll" />
+    <Content Include="Content\css\About.css" />
+    <Content Include="Content\css\AlertWindow.css" />
+    <Content Include="Content\css\ContactPerson.css" />
+    <Content Include="Content\css\Head.css" />
+    <Content Include="Content\css\headSearch.css" />
+    <Content Include="Content\css\headSearchResult.css" />
+    <Content Include="Content\css\Index.css" />
+    <Content Include="Content\css\Index2.css" />
+    <Content Include="Content\css\JnTeamWork.css" />
+    <Content Include="Content\css\KnowledgeAudit.css" />
+    <Content Include="Content\css\KnowledgeManage.css" />
+    <Content Include="Content\css\KnowledgeView.css" />
+    <Content Include="Content\css\Login.css" />
+    <Content Include="Content\css\ManageModule.css" />
+    <Content Include="Content\css\MemberManage.css" />
+    <Content Include="Content\css\newHomePage.css" />
+    <Content Include="Content\css\newHomePageLeftPartStyle.css" />
+    <Content Include="Content\css\PersonalCenter.css" />
+    <Content Include="Content\css\PreView.css" />
+    <Content Include="Content\css\project.css" />
+    <Content Include="Content\css\rankList.css" />
+    <Content Include="Content\css\Register.css" />
+    <Content Include="Content\css\UploadImg.css" />
+    <Content Include="Content\css\UploadKonwledge.css" />
+    <Content Include="Content\css\UserManageAlertWindow.css" />
+    <Content Include="Content\css\UserVerify.css" />
+    <Content Include="Content\img\1.png" />
+    <Content Include="Content\img\2.png" />
+    <Content Include="Content\img\3.png" />
+    <Content Include="Content\img\4.png" />
+    <Content Include="Content\img\46.png" />
+    <Content Include="Content\img\5.png" />
+    <Content Include="Content\img\About_icon.png" />
+    <Content Include="Content\img\checked_icon.png" />
+    <Content Include="Content\img\comment.png" />
+    <Content Include="Content\img\error_icon.png" />
+    <Content Include="Content\img\female.png" />
+    <Content Include="Content\img\img_doc.png" />
+    <Content Include="Content\img\img_GIS.png" />
+    <Content Include="Content\img\img_resource.png" />
+    <Content Include="Content\img\img_service.png" />
+    <Content Include="Content\img\img_tech.png" />
+    <Content Include="Content\img\index_bg.png" />
+    <Content Include="Content\img\index_comment_hightshow.png" />
+    <Content Include="Content\img\index_comment_noneshow.png" />
+    <Content Include="Content\img\index_image.png" />
+    <Content Include="Content\img\index_img.png" />
+    <Content Include="Content\img\index_left.png" />
+    <Content Include="Content\img\index_praise_hightshow.png" />
+    <Content Include="Content\img\index_praise_noneshow.png" />
+    <Content Include="Content\img\index_right.png" />
+    <Content Include="Content\img\leftDark.png" />
+    <Content Include="Content\img\leftLight.png" />
+    <Content Include="Content\img\little_icon.png" />
+    <Content Include="Content\img\ll1.jpg" />
+    <Content Include="Content\img\ll2.jpg" />
+    <Content Include="Content\img\ll3.jpg" />
+    <Content Include="Content\img\ll4.jpg" />
+    <Content Include="Content\img\login.png" />
+    <Content Include="Content\img\login_line.png" />
+    <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\logo2.png" />
+    <Content Include="Content\img\male.png" />
+    <Content Include="Content\img\manage_add.png" />
+    <Content Include="Content\img\manage_dele.png" />
+    <Content Include="Content\img\manage_icon.png" />
+    <Content Include="Content\img\manage_one.png" />
+    <Content Include="Content\img\manage_rename.png" />
+    <Content Include="Content\img\manage_two.png" />
+    <Content Include="Content\img\manage_type_bg.png" />
+    <Content Include="Content\img\message_icon.png" />
+    <Content Include="Content\img\modifyAriticle.png" />
+    <Content Include="Content\img\m_icon.png" />
+    <Content Include="Content\img\m_iconOpen.png" />
+    <Content Include="Content\img\newHomePageLeft.png" />
+    <Content Include="Content\img\open_icon.png" />
+    <Content Include="Content\img\orangeFlag.png" />
+    <Content Include="Content\img\people_icon.png" />
+    <Content Include="Content\img\praise.png" />
+    <Content Include="Content\img\previewBtn.PNG" />
+    <Content Include="Content\img\reply.png" />
+    <Content Include="Content\img\rightDark.png" />
+    <Content Include="Content\img\rightLight.png" />
+    <Content Include="Content\img\scrollTop.png" />
+    <Content Include="Content\img\search.jpg" />
+    <Content Include="Content\img\search2.png" />
+    <Content Include="Content\img\search_img.png" />
+    <Content Include="Content\img\syntaxhighlight1.gif" />
+    <Content Include="Content\img\top_title1.png" />
+    <Content Include="Content\img\top_title2.png" />
+    <Content Include="Content\img\UM_backforward.png" />
+    <Content Include="Content\img\UM_line.png" />
+    <Content Include="Content\img\UM_num.png" />
+    <Content Include="Content\img\uploadBtn.PNG" />
+    <Content Include="Content\img\UV_backforward.png" />
+    <Content Include="Content\img\UV_line.png" />
+    <Content Include="Content\img\UV_num.png" />
+    <Content Include="Content\img\verify_icon.png" />
+    <Content Include="Content\RRWM\css\bonusChartStatistics.css" />
+    <Content Include="Content\RRWM\css\AddTask.css" />
+    <Content Include="Content\RRWM\css\bonusTableStatistics.css" />
+    <Content Include="Content\RRWM\css\bonusDisplay.css" />
+    <Content Include="Content\RRWM\css\CheckTask.css" />
+    <Content Include="Content\RRWM\css\ComfirmTask.css" />
+    <Content Include="Content\RRWM\css\Design.css" />
+    <Content Include="Content\RRWM\css\HandOverTask.css" />
+    <Content Include="Content\RRWM\css\scheduleTime.css" />
+    <Content Include="Content\RRWM\css\taskHoursTableStatistics.css" />
+    <Content Include="Content\RRWM\css\TaskManage.css" />
+    <Content Include="Content\RRWM\css\WMHome.css" />
+    <Content Include="Content\RRWM\img\1.png" />
+    <Content Include="Content\RRWM\img\bottom.png" />
+    <Content Include="Content\RRWM\img\moreMonth.png" />
+    <Content Include="Content\RRWM\img\moreMonth_1.png" />
+    <Content Include="Content\RRWM\img\psd.png" />
+    <Content Include="Content\RRWM\img\add.jpg" />
+    <Content Include="Content\RRWM\img\checkicon.png" />
+    <Content Include="Content\RRWM\img\jt_1.png" />
+    <Content Include="Content\RRWM\img\jt_2.png" />
+    <Content Include="Content\RRWM\img\right.png" />
+    <Content Include="Content\RRWM\img\u381.png" />
+    <Content Include="Content\RRWM\img\up.png" />
+    <Content Include="Content\RRWM\img\wm.jpg" />
+    <Content Include="Content\RRWM\img\yd.png" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\video\jinan3.wmv" />
+    <Content Include="Data\GlobalData.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Libs\Newtonsoft.Json.dll" />
+    <Content Include="Libs\NewtonsoftOld.Json.dll" />
+    <Content Include="ProjectFiles\EntryGuide\entryGuide.html" />
+    <Content Include="R2.WebConfig.zip" />
+    <Content Include="Scripts\AriticleRankList\rankList.js" />
+    <Content Include="Scripts\CommonModule\About\about.js" />
+    <Content Include="Scripts\CommonModule\About\Project.js" />
+    <Content Include="Scripts\CommonModule\About\projInfo.js" />
+    <Content Include="Scripts\CommonModule\Index\Index2.js" />
+    <Content Include="Scripts\CommonModule\Index\newHomePageLeftPart.js" />
+    <Content Include="Scripts\CommonModule\PersonalCenter\PersonalCenterClass.js" />
+    <Content Include="Scripts\CommonModule\Search\SearchAriticles.js" />
+    <Content Include="Scripts\ManageModule\AlertWindow.js" />
+    <Content Include="Scripts\ManageModule\ContactPersonManage.js" />
+    <Content Include="Scripts\ManageModule\KonwledgeManage.js" />
+    <Content Include="Scripts\Plugins\bootstrap\css\bootstrap-docs.css" />
+    <Content Include="Scripts\Plugins\bootstrap\css\bootstrap.css" />
+    <Content Include="Scripts\Plugins\bootstrap\css\prettify.css" />
+    <Content Include="Scripts\Plugins\bootstrap\flat-ui.css" />
+    <Content Include="Scripts\Plugins\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Scripts\Plugins\bootstrap\js\application.js" />
+    <Content Include="Scripts\Plugins\bootstrap\js\bootstrap-select.js" />
+    <Content Include="Scripts\Plugins\bootstrap\js\google-code-prettify\prettify.js" />
+    <Content Include="Scripts\Plugins\bootstrap\js\holder.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\plugins\addpic\addpic.jpg" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\plugins\addpic\plugin.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\kama\dialog.css" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\kama\editor.css" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\kama\icons.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\kama\icons_rtl.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\kama\images\dialog_sides.gif" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\kama\images\dialog_sides.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\kama\images\dialog_sides_rtl.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\kama\images\mini.gif" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\kama\images\noimage.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\kama\images\sprites.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\kama\images\sprites_ie6.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\kama\images\toolbar_start.gif" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\kama\skin.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\kama\templates.css" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\office2003\dialog.css" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\office2003\editor.css" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\office2003\icons.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\office2003\icons_rtl.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\office2003\images\dialog_sides.gif" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\office2003\images\dialog_sides.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\office2003\images\dialog_sides_rtl.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\office2003\images\mini.gif" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\office2003\images\noimage.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\office2003\images\sprites.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\office2003\images\sprites_ie6.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\office2003\skin.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\office2003\templates.css" />
+    <Content Include="Scripts\Plugins\Form\jquery.form.js" />
+    <Content Include="Scripts\Plugins\popLayer\Javascripters大作--jQuery弹层类.html" />
+    <Content Include="Scripts\Plugins\popLayer\scripts\jquery.1.3.2.js" />
+    <Content Include="Scripts\Plugins\popLayer\scripts\popup_layer.js" />
+    <Content Include="Scripts\Plugins\popLayer\styles\core.css" />
+    <Content Include="Scripts\Plugins\popLayer\styles\images\pop_up_bg.png" />
+    <Content Include="Scripts\Plugins\popLayer\styles\images\pop_up_bg2.png" />
+    <Content Include="Scripts\QuoteJsLib\grid.js" />
+    <Content Include="Scripts\QuoteJsLib\highcharts.js" />
+    <Content Include="Scripts\RRWM\AddTask.js" />
+    <Content Include="Scripts\RRWM\bonusChartStatistics.js" />
+    <Content Include="Scripts\RRWM\bonusDisplay.js" />
+    <Content Include="Scripts\RRWM\bonusTableStatistics.js" />
+    <Content Include="Scripts\RRWM\CheckTask.js" />
+    <Content Include="Scripts\RRWM\CheckTaskViewByChecker.js" />
+    <Content Include="Scripts\RRWM\ConfirmAndCheckTask.js" />
+    <Content Include="Scripts\RRWM\dateTimePicker\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="Scripts\RRWM\dateTimePicker\css\bootstrap.min.css" />
+    <Content Include="Scripts\RRWM\dateTimePicker\img\glyphicons-halflings-white.png" />
+    <Content Include="Scripts\RRWM\dateTimePicker\img\glyphicons-halflings.png" />
+    <Content Include="Scripts\RRWM\dateTimePicker\js\bootstrap-datetimepicker.fr.js" />
+    <Content Include="Scripts\RRWM\dateTimePicker\js\bootstrap-datetimepicker.js" />
+    <Content Include="Scripts\RRWM\dateTimePicker\js\bootstrap.min.js" />
+    <Content Include="Scripts\RRWM\Design\DesignHome.js" />
+    <Content Include="Scripts\RRWM\Design\ProjectContent.js" />
+    <Content Include="Scripts\RRWM\Design\ShowPicture.js" />
+    <Content Include="Scripts\RRWM\FormatCheck.js" />
+    <Content Include="Scripts\RRWM\HandOverTask.js" />
+    <Content Include="Scripts\RRWM\scheduleTime.js" />
+    <Content Include="Scripts\RRWM\taskhoursbaseclass.js" />
+    <Content Include="Scripts\RRWM\taskHoursChartStatistics.js" />
+    <Content Include="Scripts\RRWM\taskHoursTableStatistics.js" />
+    <Content Include="Scripts\RRWM\TaskManage.js" />
+    <Content Include="Scripts\RRWM\WMHome.js" />
+    <Content Include="Scripts\TeamWork\jinan.js" />
+    <Content Include="Scripts\TeamWork\teamwork.js" />
+    <Content Include="ThirdParty\EntityFramework.dll" />
+    <Content Include="Xml\treeLayer.xml" />
+    <Content Include="Xml\treeLayerDoc.xml" />
+    <Content Include="Xml\treeLayerGIS.xml" />
+    <Content Include="Xml\treeLayerResource.xml" />
+    <Content Include="Xml\treeLayerService.xml" />
+    <Content Include="Xml\treeLayerTech.xml" />
+    <Content Include="Scripts\CommonModule\Index\Index.js" />
+    <Content Include="Scripts\CommonModule\KnowledgeView\KnowledgeView.js" />
+    <Content Include="Scripts\CommonModule\PersonalCenter\KnowledgeModify.js" />
+    <Content Include="Scripts\CommonModule\PersonalCenter\PersonalCenter.js" />
+    <Content Include="Scripts\CommonModule\Search\headSearch.js" />
+    <Content Include="Scripts\CommonModule\Search\headSearchResult.js" />
+    <Content Include="Scripts\CommonModule\UpLoadKnowledge\UploadKnowledge.js" />
+    <Content Include="Scripts\GlobalJS\global.js" />
+    <Content Include="Scripts\GlobalJS\head.js" />
+    <Content Include="Scripts\GlobalJS\JsClassEg.js" />
+    <Content Include="Scripts\LoginControlModule\Login.js" />
+    <Content Include="Scripts\LoginControlModule\Register.js" />
+    <Content Include="Scripts\ManageModule\KnowledgeAudit.js" />
+    <Content Include="Scripts\ManageModule\KnowledgeModify.js" />
+    <Content Include="Scripts\ManageModule\manageModule.js" />
+    <Content Include="Scripts\ManageModule\manageType.js" />
+    <Content Include="Scripts\ManageModule\MemberManage.js" />
+    <Content Include="Scripts\ManageModule\MemberManageClass.js" />
+    <Content Include="Scripts\ManageModule\UserVerify.js" />
+    <Content Include="Scripts\ManageModule\UserVerifyClass.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\ckeditor.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\config.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\lang\en.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\lang\zh-cn.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\lang\zh.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\lang\_languages.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\lang\_translationstatus.txt" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\plugins\styles\styles\default.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\plugins\syntaxhighlight\dialogs\syntaxhighlight.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\plugins\syntaxhighlight\images\syntaxhighlight.gif" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\plugins\syntaxhighlight\images\syntaxhighlight1.gif" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\plugins\syntaxhighlight\lang\cn.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\plugins\syntaxhighlight\lang\en.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\plugins\syntaxhighlight\plugin.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\v2\dialog.css" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\v2\editor.css" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\v2\icons.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\v2\icons_rtl.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\v2\images\dialog_sides.gif" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\v2\images\dialog_sides.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\v2\images\dialog_sides_rtl.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\v2\images\mini.gif" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\v2\images\noimage.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\v2\images\sprites.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\v2\images\sprites_ie6.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\v2\images\toolbar_start.gif" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\v2\skin.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\skins\v2\templates.css" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\scripts\clipboard.swf" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\scripts\shBrushCpp.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\scripts\shBrushCSharp.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\scripts\shBrushCss.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\scripts\shBrushJava.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\scripts\shBrushJScript.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\scripts\shBrushPhp.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\scripts\shBrushSql.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\scripts\shBrushVb.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\scripts\shCore.js" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\styles\help.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\styles\magnifier.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\styles\page_white_code.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\styles\page_white_copy.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\styles\printer.png" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\styles\shCore.css" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\styles\shThemeDefault.css" />
+    <Content Include="Scripts\Plugins\R2Team.PageControl\PageControl.js" />
+    <Content Include="Scripts\Plugins\R2Team.Search\R2TeamSearch.css" />
+    <Content Include="Scripts\Plugins\R2Team.Search\R2TeamSearch.js" />
+    <Content Include="Scripts\Plugins\Select\chosen-sprite.png" />
+    <Content Include="Scripts\Plugins\Select\chosen.css" />
+    <Content Include="Scripts\Plugins\Select\chosen.jquery.js" />
+    <Content Include="Scripts\Plugins\Select\knowledgechosen.css" />
+    <Content Include="Scripts\QuoteJsLib\images\2.png" />
+    <Content Include="Scripts\QuoteJsLib\images\3.png" />
+    <Content Include="Scripts\QuoteJsLib\images\4.png" />
+    <Content Include="Scripts\QuoteJsLib\images\5.png" />
+    <Content Include="Scripts\QuoteJsLib\images\arrow_collapsed.png" />
+    <Content Include="Scripts\QuoteJsLib\images\arrow_expanded.png" />
+    <Content Include="Scripts\QuoteJsLib\images\checkBox_che.png" />
+    <Content Include="Scripts\QuoteJsLib\images\checkBox_un.png" />
+    <Content Include="Scripts\QuoteJsLib\images\leaf.gif" />
+    <Content Include="Scripts\QuoteJsLib\images\space.gif" />
+    <Content Include="Scripts\QuoteJsLib\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\QuoteJsLib\OpenLayers.js" />
+    <Content Include="Scripts\QuoteJsLib\treeLayerManage.js" />
+    <Content Include="Scripts\QuoteJsLib\treeLayerStyle.css" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\RRDL\Home\Index.cshtml" />
+    <Content Include="Scripts\Plugins\CkeditorSyntaxhighlighter\ckeditor\plugins\syntaxhighlight\images\Thumbs.db" />
+    <Content Include="Views\RRDL\Home\HeadSearchResult.cshtml" />
+    <Content Include="Views\RRDL\ManageModule\Manage.cshtml" />
+    <Content Include="Views\RRDL\ManageModule\ToKnowledgeModify.cshtml" />
+    <Content Include="Views\RRDL\PersonalCenter\ToKnowledgeModify.cshtml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\RRDL\Ariticle\UploadAriticle.cshtml" />
+    <Content Include="Views\RRDL\DevelopTech\DevelopTech.cshtml" />
+    <Content Include="Views\RRDL\Doc\Doc.cshtml" />
+    <Content Include="Views\RRDL\GIS\GIS.cshtml" />
+    <Content Include="Views\RRDL\Register\ToRegister.cshtml" />
+    <Content Include="Views\RRDL\Resource\Resource.cshtml" />
+    <Content Include="Views\RRDL\Service\Service.cshtml" />
+    <Content Include="Views\RRDL\PersonalCenter\PersonalCenter.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\RRDL\AriticleRankList\AriticleRankList.cshtml" />
+    <Content Include="Views\RRDL\About\About.cshtml" />
+    <Content Include="ProjectFiles\EntryGuide\互联网R2Team新员工入职指南.mht" />
+    <Content Include="Views\RRWM\WorkManagerHome\WorkManager.cshtml" />
+    <Content Include="Scripts\Plugins\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Scripts\Plugins\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Scripts\Plugins\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\RRDL\Map\" />
+    <Folder Include="obj\Debug\" />
+    <Folder Include="Scripts\CommonModule\Service\" />
+    <Folder Include="Views\RRDL\MemberManage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201311181014389_InitialCreate.resx">
+      <DependentUpon>201311181014389_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201404300308224_AddContactPersons.resx">
+      <DependentUpon>201404300308224_AddContactPersons.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Files\Temp\工时导出表_20140425085201.xlsx" />
+    <Content Include="Files\Temp\工时导出表_20140425085440.xlsx" />
+    <Content Include="Content\jinan\ZD-济南地质灾害气象预警预报系统-R2.mht" />
+    <Content Include="Content\jinan\ZD-济南地质灾害气象预警预报系统_功能设计-R2Team.mht" />
+    <Content Include="Content\jinan\济南地质灾害气象预警中间过程数据说明书-RTeam.mht" />
+    <Content Include="Content\jinan\济南地质灾害气象预警原始数据说明书-RTeam.mht" />
+    <Content Include="ProjectFiles\JN\ZD-济南地质灾害气象预警预报系统-R2.mht" />
+    <None Include="Properties\PublishProfiles\yy.pubxml" />
+    <Content Include="Views\RRWM\Design\Design.cshtml" />
+    <Content Include="Views\TeamWork\Jinan.cshtml" />
+    <Content Include="Views\TeamWork\TeamWork.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3940</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/R2.RRDL</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:16527/R2.RRDL</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

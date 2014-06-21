@@ -1,0 +1,321 @@
+﻿body {
+}
+#DesignHome {
+     width:100%;
+    height:auto;
+    float:left;
+}
+#HomeContent
+{
+    min-width:1250px;
+    /*height:auto;*/
+    margin-top:91px;
+    height:100%;
+    /*position:fixed;*/
+    /*overflow-y:hidden;*/
+    /*border:1px solid black;*/
+}
+#HomeLeft{
+    position:absolute;
+    overflow:auto;
+    width:390px;
+    min-height:100%;
+    float:left;
+    background:#fff;
+    z-index:2000;
+  
+}
+.test
+{
+}
+#HomeLeft_content {
+    width:auto;
+    height:auto;
+    float:left;
+    margin-top:10px;
+    padding-left:30px;
+}
+#HomeRight {
+    width:auto;
+    background:#fff;
+    height:auto;
+    top:100px;
+    margin-top:0px;
+    z-index:1000;  
+   left:420px;
+   right:0px;
+   position:fixed;
+   /*border:1px solid black;*/
+}
+
+.HomeLeft_white {
+    position:fixed;
+    left:275px;
+    height:100%;
+    width:120px;
+    background:#fff;
+    border-right:1px solid #999;
+    border-left:1px solid #999;
+}
+.proOptions {
+    margin-top:15px;
+    margin-left:18px;
+    font-size:14px;
+    cursor:pointer;
+}
+.proTitle {
+   
+    font-size:16px;
+    margin-bottom:20px;
+    margin-top:15px;
+    font-weight:800;
+    
+}
+#proNameList li {
+    margin-bottom:15px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    padding-right:10px;
+    width:15em;
+    cursor:pointer;
+    height:23px;
+    padding-right:10px;
+}
+#proNameList li:hover{
+    color:#0C7D8B;
+}
+.right_jt {
+    position:relative;
+    margin-left:205px;
+    margin-top:-13px;
+    width:10px;
+    height:10px;
+    background:url(../../../Content/RRWM/img/1.png) no-repeat center;
+}
+.proNameList_color {
+    color:#0C7D8B;
+}
+.text_Home {
+    font-size:16px;
+   color:#0C7D8B;
+   margin-top:10px;
+}
+.text_illus {
+    margin-top:15px;
+}
+.imgUrl {
+    position: relative;
+    margin-top:30px;
+    width: 800px;
+    height:430px;
+    bottom:20px;
+    padding:5px;
+    border: 1px solid #999;
+    /*background: url(../../../Content/img/m_icon.png) no-repeat;*/
+}
+#sysHome {
+    position:absolute;
+    width:auto;
+    height:auto;
+    right:5px;
+    left:15px;
+}
+/*-----------------Picture------------*/
+#PictureContent {
+    position:absolute;
+    width:auto;
+    height:auto;
+    right:5px;
+    left:15px;
+}
+#PictureContent li {
+    width:190px;
+    height:100px;
+    float:left;
+    margin-top:30px;
+    margin-right:30px;
+    cursor:pointer;
+}
+.picName {
+    margin-bottom:10px;
+    float:left;
+}
+.picUrl {
+   
+    width:190px;
+    height:70px;
+    float:left;
+    border:1px solid #999;
+    text-align:center;
+  
+}
+.picSize {
+     float:right;
+     font-size:10px;
+     color:grey;
+     margin-top:3px;
+}
+img.imgPosition{
+   max-height:70px;
+   max-width:190px;
+   margin-top:50px;
+}
+/*-----------------PSD------------*/
+#PSDContent {
+    position:absolute;
+    width:auto;
+    height:auto;
+    right:5px;
+    left:15px;
+}
+#PSDContent li {
+    width:210px;
+    height:150px;
+    float:left;
+    margin-top:20px;
+    margin-bottom:10px;
+    margin-right:30px;
+    cursor:pointer;
+}
+.psdIMG {
+    width:210px;
+    height:115px;
+    border:1px solid #999;
+    background:url(../../../Content/RRWM/img/psd.png) no-repeat center;
+}
+.psdName {
+    margin-bottom:10px;
+   
+}
+/*-----------------AlertPSD------------*/
+#AlertPSD {
+    width:100%;
+    position:fixed;
+    top:0;
+    bottom:0;
+    background:rgba(0,0,0,0.4);
+    z-index:5000;
+}
+.AlertPSD_Middle {
+    width:100%;
+    height:200px;
+    background:#fff;
+    position:absolute;
+    top:50%;
+    margin-top:-100px;
+}
+.AlerPSD_center {
+    width:440px;
+    height:200px;
+    margin:auto;
+   
+}
+.PSDFile {
+    width:135px;
+    height:35px;
+    text-align:center;
+    line-height:35px;
+    color:white;
+    float:left;
+    background-color:#10626F;
+    margin-top:75px;
+    margin-left:20px;
+}
+.ProPSDFile {
+    width:160px;
+    height:35px;
+    text-align:center;
+    line-height:35px;
+    color:white;
+    float:right;
+    margin-top:75px;
+    background-color:#5AAAB4;
+    margin-right:20px;
+}
+.ProPSDFile:hover, .PSDFile:hover {
+    cursor:pointer;
+    background-color:#CCCCCC;
+    color:black;
+}
+.AlertClose {
+    font-size:30px;
+    font-weight:bold;
+    position:absolute;
+    right:25px;
+    top:5px;
+    color:black;
+    cursor:pointer;
+}
+/*-----------------ShowPicture------------*/
+.ShowPicture {
+    /*width:100%;
+    height:100%;*/
+    position:fixed;
+    top:0;
+    bottom:0;
+    right:0px;
+    left:0px;
+    background-color:rgba(0,0,0,0.4);
+    /*background-color:#EEF3FA;*/
+    z-index:5000;
+    text-align:center;
+}
+#preImg
+{
+    position:fixed;
+    width:80px;
+    height:28px;
+    left:15px;
+    background-color:#ff4e00;
+    top:50%;
+    margin-top:-14px;
+    color:white;
+    line-height:28px;
+    cursor:pointer;
+}
+#nextImg
+{
+    position:fixed;
+    width:80px;
+    height:28px;
+    right:15px;
+    background-color:#ff4e00;
+    top:50%;
+    color:white;
+    margin-top:-14px;
+    line-height:28px;
+     cursor:pointer;
+}
+/*-----------------系统局部图------------*/
+#sysPartial {
+    position:absolute;
+    width:auto;
+    height:auto;
+    right:5px;
+    left:15px;
+}
+#sysPartial li {
+    /*width:400px;
+    height:480px;*/
+    padding:2px;
+    float:left;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-right:30px;
+    cursor:pointer;
+
+}
+.partialImg {
+    position: relative;
+    margin-top:30px;
+    /*width: 400px;
+    height:450px;*/
+    bottom:20px;
+    border: 1px solid #999;
+    /*background: url(../../../Content/img/m_icon.png) no-repeat;*/
+}
+.textColorName
+{
+   color:#ff4e00;
+}

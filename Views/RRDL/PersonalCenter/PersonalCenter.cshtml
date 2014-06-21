@@ -1,0 +1,110 @@
+﻿@{
+    ViewBag.Title = "PersonalCenter";
+}
+<script src="@Url.Content("~/Scripts/CommonModule/PersonalCenter/PersonalCenterClass.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/LoginControlModule/Register.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/R2Team.PageControl/PageControl.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/CommonModule/PersonalCenter/PersonalCenter.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/UpLoadKnowledge/UploadKnowledge.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Data/GlobalData.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/LoginControlModule/Login.js")" type="text/javascript"></script>
+<link href="@Url.Content("~/Content/css/Login.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/css/PersonalCenter.css")" rel="Stylesheet" type="text/css" />
+<script src="@Url.Content("~/Scripts/CommonModule/Search/headSearch.js")" type="text/javascript"></script>
+<link href="@Url.Content("~/Content/css/ManageModule.css")" rel="stylesheet" type="text/css" />
+
+<script src="@Url.Content("~/Scripts/Plugins/Select/chosen.jquery.js")" type="text/javascript"></script>
+<link href="@Url.Content("~/Scripts/Plugins/Select/chosen.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Scripts/Plugins/Select/knowledgechosen.css")" rel="stylesheet" type="text/css" />
+
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/ckeditor/ckeditor.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shCore.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushCpp.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushCSharp.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushCss.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushJava.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushJScript.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushPhp.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushSql.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushVb.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushXml.js")" type="text/javascript"></script>
+<link href="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/styles/shCore.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/styles/shThemeDefault.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/css/UserManageAlertWindow.css")" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    SyntaxHighlighter.config.clipboardSwf = baseUrl + 'Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/clipboard.swf';
+    SyntaxHighlighter.all();
+    </script> 
+<div id="Home">
+    <div id="HomeContent">
+        <div id="HomeLeft">
+            <div class="Manage_nav_title">个人中心</div>
+            <div class="Manage_nav">
+                <div class="M_baseinformation" id="baseInformation">基本信息</div>
+                <div class="M_newuser" id="knowledgeManagement">知识管理</div>
+                <div class="M_user" id="userManagement">账户管理</div>
+            </div>          
+        </div>
+
+
+        <div id="HomeRight">
+         <div class="right">
+             <div id="baseinf">
+                    <div class="baseinf_title"><font style="position:relative;left:-5px; color:#017586;">用</font>&nbsp;<font style="position:relative;left:-2px; color:#017586;">户</font>&nbsp;名：</div><div class="baseinf_content"></div>
+                    <div class="baseinf_title">真实姓名：</div><div class="baseinf_content"></div>
+                    <div class="baseinf_title">昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：</div><div class="baseinf_content"></div>
+                    <div class="baseinf_title">用户权限：</div><div class="baseinf_content"></div>
+                    <div class="baseinf_title">用户分组：</div><div class="baseinf_content"></div>
+                    <div class="baseinf_title">注册时间：</div><div class="baseinf_content"></div>
+                    <div class="baseinf_title">上传知识：</div><div class="baseinf_content"></div>
+                    <div class="baseinf_title">通过审核：</div><div class="baseinf_content"></div>
+             </div>
+         <div id="upper"  style=" display:none;">
+            <input type="text" value="知识标题、知识标签" onfocus="if(value==defaultValue) {value=''}" 
+            onblur="if(!value) value=defaultValue" id="personal_search"/>
+            <img src="@Url.Content("~/Content/img/search.jpg")" alt="" id="search" />
+            <table class="pages">
+                <tr>
+                    <td class="cell" id="firstPage">第一页</td>
+                    <td class="cell" id="prePage">上一页</td>
+                    <td id="pageInfo" class="cell"></td>
+                    <td class="cell" id="nextPage">下一页</td>
+                    <td class="cell" id="lastPage">最后一页</td>
+                </tr>
+            </table>       
+            <!--------------------这里面就是动态添加的知识条目-------------------------------------------------------->        
+        </div>   
+        <div id="PwdModify" style=" display:none;">        
+         <table border=0 style="position:relative; left:70px; top:30px;" >
+         <tr class="Reg_TR">
+                <td class="Reg_TD"><font style="color:Red; font-size:12px;position:relative;top:3px;">*</font>&nbsp;<font style=" position:relative;top:3px;">旧密码：</font></td>
+                <td>
+                    <input class="Reg_Input" id="oldpwd" type="password"/>
+                    <div class="Reg_TD_Inf oldpwdInf">请确保输入正确的旧密码</div>
+                </td>
+            </tr>
+            <tr class="Reg_TR">
+                <td class="Reg_TD"><font style="color:Red; font-size:12px;position:relative;top:3px;">*</font>&nbsp;<font style=" position:relative;top:3px;">新密码：</font></td>
+                <td>
+                    <input class="Reg_Input" id="pwd" type="password"/>
+                    <div class="Reg_TD_Inf pwdInf">为了您的账号安全，建议使用字符+数字等多种不同类型的组合，且长度大于6位</div>
+                </td>
+            </tr>
+            <tr class="Reg_TR">
+                <td class="Reg_TD"><font style="color:Red; font-size:12px;position:relative;top:3px;">*</font>&nbsp;<font style=" position:relative;top:3px;">确认新密码：</font></td>
+                <td>
+                    <input class="Reg_Input" id="repwd" type="password"/>
+                    <div class="Reg_TD_Inf repwdInf">确保您记住新密码</div>
+                </td>
+            </tr>
+            
+        </table>
+        <div id="PwdModify_Submit">修&nbsp;&nbsp;&nbsp;改</div>
+        <div id="PwdModify_Reset">重&nbsp;&nbsp;&nbsp;置</div>
+        </div>
+    </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+        </div>
+        <!--HomeLeft结束-->
+    </div>
+    <div id="cookieFlag" style="display:none;">cookieFlag</div>
+</div>

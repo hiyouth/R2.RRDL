@@ -1,0 +1,86 @@
+﻿body {
+}
+#bonusChartStatistics
+{
+    /*height:1060px;*/
+    width:95%;
+    min-width:1080px;
+    padding-left:25px;
+    /*border:1px solid black;*/
+}
+#bonusColumChart
+{
+    width:100%;
+    height:530px;
+    /*border:1px solid blue;*/
+}
+#bonusLineChart
+{
+    width:100%;
+    height:530px;
+    margin-top:30px;
+    border:1px solid blue;
+}
+
+.bonusColumTitle
+{
+    font-size:20px;
+    color:#333333;  
+    margin-top:10px; 
+}
+.bonusQueryBtns
+{
+    margin-top:10px;
+    color:white;
+    height:30px;
+}
+.bonusQueryBtns li
+{
+    float:left;
+    width:90px;
+    height:30px;
+    text-align:center;
+    line-height:25px;
+    margin-right:10px;
+    cursor:pointer;
+    font-size:17px;
+}
+.bonusQueryBtns li:hover
+{
+     border:1px solid #6CE26C;
+}
+.queryselected
+{
+    background-color:#16A085;
+    color:white;
+    border:1px solid #16A085;
+}
+.queryunSelected
+{
+    background-color:#E7E5DC;
+    color:black;
+    border:1px solid #FBEED5;
+}
+#bonusColumContent,#bonusLineContent
+{
+    margin-top:10px;
+    height:auto;
+    width:100%;
+    min-width:1000px;  
+    /*position:absolute;*/
+    /*bottom:40px;*/
+    /*top:100px;*/
+    /*border:1px solid blue;*/
+   
+}
+#bonusColumChartContent,#bonusLineChartContent
+{
+    width:100%;
+    height:500px;  
+    margin-top:20px;
+    border-top:2px solid #007ACC;
+    border-left:1px solid #cccccc;
+    border-right:1px solid #cccccc;
+    border-bottom:1px solid #cccccc;
+   
+}

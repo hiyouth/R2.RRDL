@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+	<link href="@Url.Content("~/Content/css/Head.css")" rel="stylesheet" type="text/css" />
+	<script src="@Url.Content("~/Scripts/QuoteJsLib/jquery-1.7.1.min.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/QuoteJsLib/OpenLayers.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/GlobalJS/global.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Data/GlobalData.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/GlobalJS/JsClassEg.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/GlobalJS/PersonalCenterCommonModule.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/QuoteJsLib/treeLayerManage.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/LoginControlModule/Login.js")" type="text/javascript"></script>
+    <link href="@Url.Content("~/Content/css/Login.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Scripts/QuoteJsLib/treeLayerStyle.css")" rel="stylesheet" type="text/css" />
+	<script src="@Url.Content("~/Scripts/Plugins/R2Team.Search/R2TeamSearch.js")" type="text/javascript"></script>
+	<link href="@Url.Content("~/Scripts/Plugins/R2Team.Search/R2TeamSearch.css")" rel="stylesheet" type="text/css" />
+	<script src="@Url.Content("~/Scripts/CommonModule/Search/headSearch.js")" type="text/javascript"></script>
+	<script src="@Url.Content("~/Scripts/GlobalJS/head.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/Plugins/R2Team.PageControl/PageControl.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/CommonModule/UpLoadKnowledge/PreView.js")" type="text/javascript"></script>
+    <link href="@Url.Content("~/Content/css/PreView.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/ManageModule/AlertWindow.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/CommonModule/Search/headSearchResult.js")" type="text/javascript"></script>
+    <link href="@Url.Content("~/Content/css/AlertWindow.css")" rel="stylesheet" type="text/css" />
+     <script type="text/javascript" >
+         var baseUrl = '@Url.Content("~/")'; //全局的URl，解决iis中路径的问题
+    </script>  
+    <style type="text/css">
+        .Head_Title {
+            cursor:pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    @RenderBody()
+    <div id="Head">
+        <div id="Head_left">
+            <div id="Head_title">
+                <div id="Head_logo"></div>
+                <div id="Head_beta">Beta!</div>
+            </div>
+            <div id="Head_nav">
+                <a class="Head_Title">首&nbsp;页</a>
+                <a class="Head_Title">开发技术</a>
+                <a class="Head_Title">团队任务</a>
+                <a class="Head_Title">设&nbsp;计</a>
+                <a class="Head_Title">团队作品</a>
+                <a class="Head_Title">资源信息</a>
+                <a class="Head_Title">关于我们</a>
+            </div>
+        </div>
+        <div id="Head_right">
+            <div id="Head_user">
+                <div id="Head_welcome">欢迎您，游客</div>
+                @*<div class="ariticleRankList">知识排行榜</div>*@
+                <div id="Head_login">登录</div>
+            </div>
+            @*<div id="Head_search">
+                <input type="text" id="HeadSearch" value="知识标题、知识标签、上传者昵称" onblur="if(!this.value){this.value='知识标题、知识标签、上传者昵称';this.flag=undefined;}else{this.flag='true'};return true;"
+         onfocus="if(this.value=='知识标题、知识标签、上传者昵称'&&!this.flag)this.value='';return true;"/>
+                <div id="HeadSearch_icon"></div>
+            </div>*@
+        </div>
+    </div>
+    <!--Head结束-->
+    <div id="Copyright">版权所有 &copy;武汉中地数码科技有限公司 WebGIS R<span style="font-size:9px; color:#666">2</span>Team 2013</div>
+</body>
+
+</html>

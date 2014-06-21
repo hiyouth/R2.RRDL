@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Manage";
+}
+<script src="@Url.Content("~/Scripts/QuoteJsLib/jquery-1.7.1.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/flipAndJqueryUI/jquery-ui.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/ManageModule/KnowledgeAudit.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/ManageModule/KonwledgeManage.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/ManageModule/manageModule.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/R2Team.PageControl/PageControl.js")" type="text/javascript"></script>
+
+<script src="@Url.Content("~/Scripts/ManageModule/UserVerify.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/ManageModule/UserVerifyClass.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/ManageModule/MemberManage.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/ManageModule/MemberManageClass.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/ManageModule/manageType.js")" type="text/javascript"></script>
+<link href="@Url.Content("~/Content/css/MemberManage.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/css/UserVerify.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/css/ManageModule.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/css/KnowledgeAudit.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/css/KnowledgeManage.css")" rel="stylesheet" type="text/css" />
+<script src="@Url.Content("~/Scripts/Plugins/Select/chosen.jquery.js")" type="text/javascript"></script>
+<link href="@Url.Content("~/Scripts/Plugins/Select/chosen.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Scripts/Plugins/Select/knowledgechosen.css")" rel="stylesheet" type="text/css" />
+
+@*<link href="@Url.Content("~/Content/css/ContactPerson.css")" rel="stylesheet" type="text/css" />*@
+<script src="@Url.Content("~/Scripts/ManageModule/ContactPersonManage.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/ManageModule/AlertWindow.js")" type="text/javascript"></script>
+<link href="@*@Url.Content("~/Scripts/Plugins/bootstrap/css/bootstrap.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Scripts/Plugins/bootstrap/css/prettify.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Scripts/Plugins/bootstrap/flat-ui.css")" rel="st*@ylesheet" type="text/css" />
+@*以上为六个文件为黄圣所加*@
+
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/ckeditor/ckeditor.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shCore.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushCpp.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushCSharp.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushCss.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushJava.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushJScript.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushPhp.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushSql.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushVb.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/shBrushXml.js")" type="text/javascript"></script>
+<link href="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/styles/shCore.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Scripts/Plugins/CkeditorSyntaxhighlighter/styles/shThemeDefault.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/css/UserManageAlertWindow.css")" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    SyntaxHighlighter.config.clipboardSwf = baseUrl + 'Scripts/Plugins/CkeditorSyntaxhighlighter/scripts/clipboard.swf';
+    SyntaxHighlighter.all();
+    </script> 
+<div id="Manage">
+    <div id="Manage_left">
+        <div class="Manage_nav_title">管理中心</div>
+        <div class="Manage_nav">
+            <div class="M_newuser">会员审核</div>
+            <div class="M_user">会员管理</div>
+            <div class="M_knowledge">知识审核</div>
+            <div class="M_storage">知识管理</div>
+            <div class="M_type">目录树管理</div>
+            <div class="M_group">分组管理</div>
+            <div class="M_contact">通讯录管理</div>
+        </div>
+    </div>
+    <div id="Manage_right">
+        
+    </div>
+    <div id="cookieFlag" style="display:none;">cookieFlag</div>
+</div>
